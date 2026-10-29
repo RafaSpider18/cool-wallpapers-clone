@@ -20,6 +20,7 @@ Dueño: `W1` · `W2` · `creador`
 | T-013 | Arte raster propio (thumbs + full 1080p/4K JPEG) | T-003, T-012 | done | supervisor | `npm run gen:assets` + `npm run test:e2e` |
 | T-014 | SEO: meta en `<head>` de rutas dinámicas (SSG listado/categorías) | T-007 | done | supervisor | `npm run test:e2e` + Lighthouse SEO 100 |
 | T-015 | Preparar publicación (README, .env.example, checklist) | T-014 | done | supervisor | `npm run build` |
+| T-016 | Despliegue GitHub + Vercel | T-015 | done | supervisor | URL producción 200 + sitemap/random/OG verificados |
 
 ## Bitácora
 | Fecha | ID | Evento |
@@ -33,3 +34,4 @@ Dueño: `W1` · `W2` · `creador`
 | 2026-10-28 | — | T-014 registrada (pendiente): meta description del `<head>` en rutas dinámicas |
 | 2026-10-28 | T-014 | done — /cool-wallpapers estático y categorías SSG; Lighthouse 100×4 en listado/categoría/detalle, CLS 0 |
 | 2026-10-28 | T-015 | done — README + .env.example + checklist de despliegue en README |
+| 2026-10-28 | T-016 | done — repo GitHub (RafaSpider18/cool-wallpapers-clone) + Vercel producción con NEXT_PUBLIC_SITE_URL verificada |

@@ -29,6 +29,7 @@
 - T-013 done (supervisor): arte raster JPEG propio (180 archivos, ~9 MB: thumb 640×360 + full 1080p/4K), 7 escenas por categoría en `gen-assets.mjs`; catálogo/collections a `.jpg`; E2E caso 11 en JPEG.
 - T-014 done (supervisor): `/cool-wallpapers` estático + 30 categorías SSG (`generateStaticParams`); `?page=N` resuelto post-hidratación desde `window.location`; Lighthouse 100/100/100/100 y CLS 0 en listado, categoría y detalle.
 - T-015 done (supervisor): `README.md` (scripts, estructura, checklist de despliegue) y `.env.example` con `NEXT_PUBLIC_SITE_URL`. Repo listo para GitHub/Vercel.
+- T-016 done (supervisor, con sesión del usuario): repo `RafaSpider18/cool-wallpapers-clone` en GitHub y sitio vivo en `https://cool-wallpapers-clone.vercel.app` (sitemap 96 URLs absolutas, `/random` 307, OG PNG).
 
 ## DECISIONES
 - **ADR-1** Next.js 15 + Tailwind + TS. Datos en `data/wallpapers.json`. Imágenes placeholder generadas.
@@ -52,5 +53,5 @@ Ver `.agents/tasks/queue.md` (fuente única de verdad).
 | `app/` | rutas Next.js |
 
 ## SIGUIENTE
-1. Proyecto cerrado: T-001..T-015 + A1, A2, C7 y B4–B6 done; build + 13/13 E2E; Lighthouse 100×4 (listado/categoría/detalle).
-2. Despliegue con el usuario: GitHub/Vercel + `NEXT_PUBLIC_SITE_URL` al dominio final (checklist en README).
+1. Proyecto publicado: T-001..T-016 done. Vivo en https://cool-wallpapers-clone.vercel.app
+2. Opcional a futuro: dominio propio (Vercel + `NEXT_PUBLIC_SITE_URL`), `noindex` en `/search` (T-015 nota), ampliar catálogo o páginas `/tag/<tag>`.

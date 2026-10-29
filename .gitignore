@@ -28,3 +28,5 @@ Thumbs.db
 npm-debug.log*
 *.tsbuildinfo
 .agents/tasks/.queue.lock
+.vercel
+.env*
