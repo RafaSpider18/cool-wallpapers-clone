@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const FOOTER_LINKS = [
+  { label: "Tags", href: "/tags" },
+  { label: "Créditos", href: "/credits" },
   { label: "Privacy", href: "/privacy" },
   { label: "TOS", href: "/terms" },
   { label: "Copyright", href: "/copyright" },

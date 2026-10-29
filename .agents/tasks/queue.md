@@ -21,6 +21,9 @@ Dueño: `W1` · `W2` · `creador`
 | T-014 | SEO: meta en `<head>` de rutas dinámicas (SSG listado/categorías) | T-007 | done | supervisor | `npm run test:e2e` + Lighthouse SEO 100 |
 | T-015 | Preparar publicación (README, .env.example, checklist) | T-014 | done | supervisor | `npm run build` |
 | T-016 | Despliegue GitHub + Vercel | T-015 | done | supervisor | URL producción 200 + sitemap/random/OG verificados |
+| T-017 | `noindex` en `/search` | T-016 | done | supervisor | E2E caso 10: meta robots noindex |
+| T-018 | Rutas `/tag/[tag]` + hub `/tags` | T-016 | done | supervisor | build SSG 60 tags + E2E 14 + Lighthouse tag 100 |
+| T-019 | Fotografía real Commons con crédito (ADR-9) | T-016 | done | supervisor | 24 fotos, build, E2E 15/15, Lighthouse 100×4 |
 
 ## Bitácora
 | Fecha | ID | Evento |
@@ -35,3 +38,6 @@ Dueño: `W1` · `W2` · `creador`
 | 2026-10-28 | T-014 | done — /cool-wallpapers estático y categorías SSG; Lighthouse 100×4 en listado/categoría/detalle, CLS 0 |
 | 2026-10-28 | T-015 | done — README + .env.example + checklist de despliegue en README |
 | 2026-10-28 | T-016 | done — repo GitHub (RafaSpider18/cool-wallpapers-clone) + Vercel producción con NEXT_PUBLIC_SITE_URL verificada |
+| 2026-10-28 | T-017 | done — `/search` noindex,follow (meta) además de robots.txt |
+| 2026-10-28 | T-018 | done — `/tag/[tag]` SSG (60 rutas) + hub `/tags`; sitemap y detalle actualizados |
+| 2026-10-28 | T-019 | done — 24 fotos reales de Commons con crédito (ADR-9); catálogo 84 items; 15/15 E2E; Lighthouse 100×4 |

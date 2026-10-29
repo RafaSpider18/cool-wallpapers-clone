@@ -30,6 +30,9 @@
 - T-014 done (supervisor): `/cool-wallpapers` estático + 30 categorías SSG (`generateStaticParams`); `?page=N` resuelto post-hidratación desde `window.location`; Lighthouse 100/100/100/100 y CLS 0 en listado, categoría y detalle.
 - T-015 done (supervisor): `README.md` (scripts, estructura, checklist de despliegue) y `.env.example` con `NEXT_PUBLIC_SITE_URL`. Repo listo para GitHub/Vercel.
 - T-016 done (supervisor, con sesión del usuario): repo `RafaSpider18/cool-wallpapers-clone` en GitHub y sitio vivo en `https://cool-wallpapers-clone.vercel.app` (sitemap 96 URLs absolutas, `/random` 307, OG PNG).
+- T-017 done (supervisor): `/search` con `robots: noindex,follow` en metadata (además de robots.txt); E2E actualizado.
+- T-018 done (supervisor): `/tag/[tag]` SSG (60 rutas) + hub `/tags`; sitemap incluye tag URLs; tags del detalle enlazan a tags publicados.
+- T-019 done (supervisor): 24 fotografías reales de Commons con licencia abierta y crédito en ficha/`/credits` (ADR-9); catálogo 84 items (~64 MB arte); E2E 15/15; Lighthouse 100×4 (listado/categoría/detalle/tag).
 
 ## DECISIONES
 - **ADR-1** Next.js 15 + Tailwind + TS. Datos en `data/wallpapers.json`. Imágenes placeholder generadas.
@@ -40,6 +43,7 @@
 - **ADR-6** Escritor único de estado: los workers solo escriben `.agents/tasks/T-XXX.result.md`; `queue.md` y `MEMORIA.md` los tocan únicamente el delegador (con lock) y el supervisor.
 - **ADR-7** URL pública por `NEXT_PUBLIC_SITE_URL` con fallback `http://localhost:3000`; sitemap, robots y metadatos sociales se construyen desde `lib/site.ts`.
 - **ADR-8** El arte es raster JPEG determinista generado por `scripts/gen-assets.mjs` (Playwright/Chromium, 7 escenas por categoría, seeds por id): thumbs 640×360 + full 1080p/4K; la variante 8K se retiró por peso. Sin raster externo ni CDN.
+- **ADR-9** Fotografía real curada de Wikimedia Commons con licencia abierta (Public domain/CC0/CC BY(-SA)), procesada por `scripts/process-photos.mjs` (recorte 16:9 con canvas de Chromium, sin upscaling, 1080p siempre y 4K si el original lo permite) y registrada en `data/photos.json` con crédito (autor/licencia/origen) visible en ficha y `/credits`. Nunca se descarga contenido de 4kwallpapers.com.
 
 ## TAREAS
 Ver `.agents/tasks/queue.md` (fuente única de verdad).
@@ -53,5 +57,6 @@ Ver `.agents/tasks/queue.md` (fuente única de verdad).
 | `app/` | rutas Next.js |
 
 ## SIGUIENTE
-1. Proyecto publicado: T-001..T-016 done. Vivo en https://cool-wallpapers-clone.vercel.app
-2. Opcional a futuro: dominio propio (Vercel + `NEXT_PUBLIC_SITE_URL`), `noindex` en `/search` (T-015 nota), ampliar catálogo o páginas `/tag/<tag>`.
+1. Publicada la ronda T-017..T-019 (noindex, tags, fotos Commons). Vivo en https://cool-wallpapers-clone.vercel.app tras re-deploy.
+2. Dominio propio: bloqueado por falta de dominio comprado; al tenerlo → conectar en Vercel + actualizar `NEXT_PUBLIC_SITE_URL`.
+3. Opcional: más cupos por tema en `process-photos.mjs`, categorías nuevas, paginación server-side en `/tag/`.

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ResolutionPicker } from "@/components/ResolutionPicker";
 import { WallpaperGrid } from "@/components/WallpaperGrid";
-import { wallpapers } from "@/lib/wallpapers";
+import { getByTag, slugifyTag, wallpapers } from "@/lib/wallpapers";
 
 type DetailPageProps = {
   params: Promise<{ category: string; slug: string }>;
@@ -77,11 +77,24 @@ export default async function DetailPage({ params }: DetailPageProps) {
         />
         <h1 className="mt-4 text-3xl font-bold">{item.title}</h1>
         <p className="mt-2 text-muted">Categoría: {item.category}</p>
+        {item.source ? (
+          <p className="mt-2 text-sm text-muted">
+            Foto de {item.source.author} · licencia {item.source.license} ·{" "}
+            <a
+              href={item.source.page}
+              target="_blank"
+              rel="noreferrer nosponsored noopener"
+              className="underline decoration-border underline-offset-2 hover:text-text"
+            >
+              Origen (Wikimedia Commons)
+            </a>
+          </p>
+        ) : null}
         <div className="mt-4 flex flex-wrap gap-2">
           {item.tags.map((tag) => (
             <Link
               key={tag}
-              href={`/search?q=${encodeURIComponent(tag)}`}
+              href={getByTag(slugifyTag(tag)) ? `/tag/${slugifyTag(tag)}` : `/search?q=${encodeURIComponent(tag)}`}
               className="rounded-[8px] border border-[var(--border)] px-3 py-1 text-sm text-[var(--text)] transition-colors hover:border-accent hover:text-accent"
             >
               {tag}

@@ -1,6 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { search } from "@/lib/wallpapers";
 import { WallpaperGrid } from "@/components/WallpaperGrid";
+
+// T-017: las búsquedas no se indexan (duplican contenido; /robots.txt ya la excluye).
+export const metadata: Metadata = {
+  title: "Búsqueda | Cool Wallpapers",
+  robots: { index: false, follow: true },
+};
 
 const POPULAR_CATEGORIES = [
   { slug: "anime", label: "Anime" },

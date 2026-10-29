@@ -107,7 +107,15 @@ test("10. 404 propio, sitemap, robots y metadatos sociales", async ({ page, requ
   const xml = await sitemap.text();
   expect(xml).toContain("/cool-wallpapers");
   expect(xml).toContain("/abstract/aurora-veil-1.html");
+  expect(xml).toContain("/tag/night");
   expect(xml).toContain("/privacy");
+
+  // T-017: /search no se indexa
+  await page.goto("/search?q=anime");
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    "content",
+    /noindex/,
+  );
 
   const robots = await request.get("/robots.txt");
   expect(robots.status()).toBe(200);
@@ -179,6 +187,45 @@ test("13. Random del header lleva a un detalle", async ({ page }) => {
   await page.getByRole("link", { name: "Random" }).click();
   await expect(page).toHaveURL(/\/[\w-]+\/[\w-]+-\d+\.html$/);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+});
+
+test("14. hub /tags y página /tag/[tag] estática", async ({ page, request }) => {
+  await page.goto("/tags");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Tags");
+
+  const tagLinks = await page
+    .locator("main ul a")
+    .evaluateAll((links) => links.map((link) => link.getAttribute("href") ?? ""));
+  expect(tagLinks.length).toBeGreaterThan(20);
+
+  await page.goto("/tag/night");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Night wallpapers");
+  expect(await cards(page).count()).toBeGreaterThan(0);
+
+  // los cards del tag llevan al detalle correcto
+  const firstHref = await cards(page).first().locator("a").first().getAttribute("href");
+  expect(firstHref).toMatch(/^\/[\w-]+\/[\w-]+-\d+\.html$/);
+
+  const sitemap = await request.get("/sitemap.xml");
+  expect(sitemap.status()).toBe(200);
+});
+
+test("15. la foto de catálogo lleva crédito y licencia", async ({ page, request }) => {
+  const { readFileSync } = await import("node:fs");
+  const photos = JSON.parse(
+    readFileSync("data/photos.json", "utf8"),
+  ) as Array<{ id: number; slug: string; category: string }>;
+  test.skip(photos.length === 0, "T-019 sin fotos todavía");
+
+  const photo = photos[0];
+  await page.goto(`/${photo.category}/${photo.slug}-${photo.id}.html`);
+  await expect(page.getByText(/^Foto de /)).toBeVisible();
+  const source = page.getByRole("main").getByRole("link", { name: "Origen (Wikimedia Commons)" });
+  await expect(source).toBeVisible();
+
+  await page.goto("/credits");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Créditos de fotografía");
+  expect(await page.locator("main ul li").count()).toBe(photos.length);
 });
 
 

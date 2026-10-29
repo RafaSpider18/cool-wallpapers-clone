@@ -9,7 +9,7 @@ npm run build
 npm run test:e2e
 ```
 
-Resultado: **13/13 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Los casos 1–8 son el MVP; 9–13 cubren la ampliación post-cierre (A1/A2 y B4–B6).
+Resultado: **15/15 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Los casos 1–8 son el MVP; 9–13 la ampliación post-cierre; 14–15 T-017/T-018/T-019.
 
 | # | Caso | Verifica |
 |---|---|---|
@@ -26,6 +26,8 @@ Resultado: **13/13 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Lo
 | 11 | Resoluciones | el selector cambia `href`/`download` entre 1080p y 4K (JPEG); el asset 1920×1080 responde 200 con `image/jpeg` |
 | 12 | Breadcrumbs/tags | migas con `aria-current` y tag que navega a `/search?q=gradient` con resultados |
 | 13 | Random UI | el enlace `Random` del header termina en un detalle válido |
+| 14 | Tags (T-018) | hub `/tags` con ≥20 tags; `/tag/night` SSG lista cards del tag; sitemap incluye `/tag/*` |
+| 15 | Créditos (T-019) | la ficha de una foto muestra «Foto de …» y enlace a Commons; `/credits` lista la fotografía con licencia |
 
 ## 2. Lighthouse (desktop, headless Chrome — build de producción, todas las categorías)
 
@@ -34,8 +36,9 @@ Resultado: **13/13 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Lo
 | `/cool-wallpapers` | **100** | **100** | 100 | 100 | 0 |
 | `/abstract` (categoría SSG) | **100** | **100** | 100 | 100 | 0 |
 | `/abstract/aurora-veil-1.html` | **100** | **100** | 100 | 100 | 0 |
+| `/tag/night` (T-018, SSG) | **100** | **100** | 100 | 100 | 0 |
 
-JSON crudo: `docs/lighthouse.json`, `docs/lighthouse-category.json`, `docs/lighthouse-detail.json` (re-medidos tras T-013/T-014).
+JSON crudo: `docs/lighthouse.json`, `docs/lighthouse-category.json`, `docs/lighthouse-detail.json`, `docs/lighthouse-tag.json` (re-medidos tras T-017/T-018/T-019, con catálogo de 84 items).
 
 ```powershell
 npx lighthouse http://localhost:3000/cool-wallpapers --preset=desktop `
@@ -56,8 +59,9 @@ Nota: los reportes previos a T-014 corrían con `--only-categories=performance,a
 
 ## 4. Límites conocidos
 
-- El catálogo es de 60 imágenes raster JPEG generadas proceduralmente (30 categorías, 7 escenas): thumbs 640×360 + full 1080p/4K, ~9 MB en total; sin assets externos ni CDN.
-- `/search` y `/random` siguen dinámicos por diseño; no están en el sitemap y Lighthouse no los auditó de base (la búsqueda debería ser `noindex` en producción, T-015 opcional).
+- Catálogo híbrido (T-019): 60 rasters JPEG generativos propios (~9 MB) + 24 fotografías reales de Wikimedia Commons con licencia abierta (~55 MB), crédito autor/licencia en ficha y `/credits`. Sin contenido de 4kwallpapers.com.
+- La curación de fotos (`scripts/process-photos.mjs`) es determinista salvo errores transitorios de red (429 de Wikimedia): los reintentos a veces dejan un tema con menos fotos que su cupo; re-ejecutar el script completa el catálogo sin renombrar ids existentes.
+- `/search` y `/random` siguen dinámicos por diseño; `/search` es `noindex,follow` (T-017) y está excluida en `robots.txt`.
 - Deep-link a `?page=N` hace un re-render del grid tras hidratar (el HTML estático trae siempre página 1); Control de CLS en el flujo normal intacto.
 - `next lint` está deprecado en Next 15 (aviso del propio CLI); no afecta al build.
 - La paridad de tokens con el sitio original es aproximada: Cloudflare bloquea la lectura del CSS público (ADR-5).

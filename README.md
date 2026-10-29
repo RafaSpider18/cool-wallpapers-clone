@@ -2,8 +2,11 @@
 
 Réplica de **UX, rutas y flujo** de la categoría Cool de `4kwallpapers.com`
 (navegar → grid paginado → detalle → descargar), con **catálogo y arte propios**.
-No se copian imágenes, marca ni contenido del original (ADR-4): todo el arte es
-raster JPEG generado proceduralmente por el propio repo.
+No se copian imágenes, marca ni contenido del original (ADR-4). El arte es:
+1. **Raster JPEG generativo determinista** (60 items / 30 categorías) y
+2. **Fotografía real** de Wikimedia Commons con licencias abiertas
+   (Public domain / CC0 / CC BY(-SA)), siempre con autor y licencia en ficha
+   (T-019, ver `/credits`).
 
 ## Stack
 
@@ -28,8 +31,9 @@ npm run dev        # http://localhost:3000 → /cool-wallpapers
 | `npm run build` | build de producción (bloquea si fallan tipos/lint) |
 | `npm run start` | sirve el build (`next start`) |
 | `npm run lint` | ESLint |
-| `npm run test:e2e` | Playwright contra el build (13 casos) |
-| `npm run gen:assets` | regenera las 180 imágenes + `data/wallpapers.json` |
+| `npm run test:e2e` | Playwright contra el build (15 casos) |
+| `npm run gen:assets` | regenera las imágenes generativas + `data/wallpapers.json` |
+| `npm run process:photos` | curación+procesado de fotos (Commons) → `data/photos.json` |
 
 ## Variables de entorno
 
@@ -64,8 +68,10 @@ evidence/                   evidencia de reconocimiento
 | `/cool-wallpapers` | listado principal (paginación, colecciones) |
 | `/{categoria}` | listado filtrado |
 | `/{categoria}/{slug}-{id}.html` | detalle + selector 1080p/4K + descarga |
-| `/search?q=` | resultados |
+| `/tags` · `/tag/<tag>` | hub de temas y listado por tag (SSG) |
+| `/search?q=` | resultados (noindex) |
 | `/random` | redirect a un item aleatorio |
+| `/credits` | atribución de la fotografía (autor/licencia/origen) |
 | `/privacy` `/terms` `/copyright` `/contact` `/upload` | páginas del footer |
 
 ## Despliegue (checklist)
@@ -85,6 +91,8 @@ evidence/                   evidencia de reconocimiento
 
 ## Alcance / límites
 
-- Proyecto de demo: catálogo propio de 60 rasters generados (no fotorrealistas).
-- `/search` sigue dinámica (fuera del sitemap); añadir `noindex` si se publica.
+- Catálogo híbrido: 60 rasters generativos propios + ~28 fotos de Commons con
+  crédito visible (sin contenido de 4kwallpapers.com).
+- La curación de fotos es determinista (orden de relevancia de la API de
+  Commons + filtros); ajustar temas en `scripts/process-photos.mjs`.
 - Detalles de QA y métricas: `docs/qa-report.md`.

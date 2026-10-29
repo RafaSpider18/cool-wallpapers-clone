@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test:e2e": "playwright test",
-    "gen:assets": "node scripts/gen-assets.mjs"
+    "gen:assets": "node scripts/gen-assets.mjs",
+    "process:photos": "node scripts/process-photos.mjs"
   },
   "dependencies": {
     "next": "^15.5.4",
