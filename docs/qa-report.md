@@ -9,7 +9,7 @@ npm run build
 npm run test:e2e
 ```
 
-Resultado: **8/8 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless).
+Resultado: **10/10 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Los casos 1–8 son el MVP; 9–10 cubren la ampliación post-cierre (A1/A2).
 
 | # | Caso | Verifica |
 |---|---|---|
@@ -21,6 +21,8 @@ Resultado: **8/8 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless).
 | 6 | Búsqueda | `?q=anime` con contador y resultados; `?q=zzzz` con estado vacío |
 | 7 | `/random` | `307` + `Location` absoluta hacia `/{categoria}/{slug}-{id}.html` |
 | 8 | Responsive | sin scroll horizontal a 390 px (`scrollWidth - clientWidth ≤ 1`) |
+| 9 | Footer | las 5 rutas informativas responden y muestran su H1 |
+| 10 | SEO/404 | 404 propio, `sitemap.xml` con categorías/detalles, `robots.txt` y meta OG/Twitter |
 
 ## 2. Lighthouse (desktop, headless Chrome)
 

@@ -14,6 +14,9 @@ Replicar el comportamiento de `https://4kwallpapers.com/cool-wallpapers`: navega
 | 5 | Rutas: categoría, detalle, búsqueda (T-007, T-008, T-009) | done |
 | 6 | Responsive + a11y (T-010) | done |
 | 7 | Colecciones, random, QA (T-011, T-012) | done — ver `docs/qa-report.md` |
+| 8 | A1: páginas del footer (privacidad, términos, copyright, contacto, upload) | done |
+| 9 | A2: 404 propio, sitemap, robots, Open Graph/Twitter e icono | done |
+| 10 | C7: CI en GitHub Actions (build + tipos + lint + E2E) | done |
 
 ## Rutas
 | Ruta | Contenido |
@@ -24,6 +27,8 @@ Replicar el comportamiento de `https://4kwallpapers.com/cool-wallpapers`: navega
 | `/{categoria}/{slug}-{id}.html` | detalle + resoluciones + descarga |
 | `/search?q=` | resultados |
 | `/random` | redirect a un item aleatorio |
+| `/privacy`, `/terms`, `/copyright`, `/contact`, `/upload` | páginas informativas del footer |
+| `/sitemap.xml`, `/robots.txt` | SEO técnico |
 
 ## Criterios de aceptación (MVP)
 1. Paridad visual en 390 / 768 / 1440 px (±8 px en bloques principales).

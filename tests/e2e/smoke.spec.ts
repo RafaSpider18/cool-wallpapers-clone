@@ -78,3 +78,55 @@ test("8. sin scroll horizontal a 390 px", async ({ page }) => {
   );
   expect(overflow).toBeLessThanOrEqual(1);
 });
+
+test("9. las páginas del footer existen y tienen H1", async ({ page }) => {
+  const pages = [
+    ["/privacy", "Política de privacidad"],
+    ["/terms", "Términos de uso"],
+    ["/copyright", "Copyright"],
+    ["/contact", "Contacto"],
+    ["/upload", "Subir un wallpaper"],
+  ] as const;
+
+  for (const [href, heading] of pages) {
+    await page.goto(href);
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(heading);
+  }
+});
+
+test("10. 404 propio, sitemap, robots y metadatos sociales", async ({ page, request }) => {
+  const missing = await page.goto("/esto-no-existe");
+  expect(missing?.status()).toBe(404);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Esta página no existe",
+  );
+
+  const sitemap = await request.get("/sitemap.xml");
+  expect(sitemap.status()).toBe(200);
+  const xml = await sitemap.text();
+  expect(xml).toContain("/cool-wallpapers");
+  expect(xml).toContain("/abstract/aurora-veil-1.html");
+  expect(xml).toContain("/privacy");
+
+  const robots = await request.get("/robots.txt");
+  expect(robots.status()).toBe(200);
+  expect(await robots.text()).toContain("Sitemap:");
+
+  await page.goto("/cool-wallpapers");
+  const ogImage = await page
+    .locator('meta[property="og:image"]')
+    .getAttribute("content");
+  expect(ogImage).toMatch(/opengraph-image/);
+
+  const image = await request.get(ogImage!);
+  expect(image.status()).toBe(200);
+  expect(image.headers()["content-type"]).toContain("image/png");
+  expect((await image.body()).byteLength).toBeGreaterThan(1000);
+
+  await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
+    "content",
+    "summary_large_image",
+  );
+});
+
+

@@ -20,6 +20,9 @@
 - T-010 done: Header apila en móvil (390 px sin overflow) + foco visible global; `tsc` + build OK.
 - T-012 done (supervisor): Playwright 8/8 + Lighthouse 100/100 en listado y detalle; informe en `docs/qa-report.md`.
 - QA corrigió: `/random` 500 (URL absoluta), `?page=N` real (página resuelta en servidor), CLS 0 (sin bailout CSR), contraste AA (`--accent #f43f5e`).
+- A1 done: 5 páginas del footer (`/privacy`, `/terms`, `/copyright`, `/contact`, `/upload`) con `components/InfoPage.tsx` y contenido honesto de demo; layout ya no duplica `<main>`.
+- A2 done: `app/not-found.tsx` + `app/sitemap.ts` (30 categorías, 60 detalles, 5 info) + `app/robots.ts` + `metadataBase`/OG/Twitter + `opengraph-image`/`twitter-image` + `app/icon.svg`; base URL en `lib/site.ts` (`NEXT_PUBLIC_SITE_URL`, fallback localhost).
+- C7 done: `.github/workflows/ci.yml` (Node 22, `npm ci`, tsc, lint, build, Chromium, E2E, artefacto de trazas si falla). E2E ampliado a 10/10.
 
 ## DECISIONES
 - **ADR-1** Next.js 15 + Tailwind + TS. Datos en `data/wallpapers.json`. Imágenes placeholder generadas.
@@ -28,6 +31,7 @@
 - **ADR-4** Sin dependencias del CDN original; cero hotlinks.
 - **ADR-5** Cloudflare bloquea HTTP directo al sitio; tokens propios inferidos y marcados en `docs/design-spec.md`. REA con navegador real queda como verificación opcional.
 - **ADR-6** Escritor único de estado: los workers solo escriben `.agents/tasks/T-XXX.result.md`; `queue.md` y `MEMORIA.md` los tocan únicamente el delegador (con lock) y el supervisor.
+- **ADR-7** URL pública por `NEXT_PUBLIC_SITE_URL` con fallback `http://localhost:3000`; sitemap, robots y metadatos sociales se construyen desde `lib/site.ts`.
 
 ## TAREAS
 Ver `.agents/tasks/queue.md` (fuente única de verdad).
@@ -41,5 +45,6 @@ Ver `.agents/tasks/queue.md` (fuente única de verdad).
 | `app/` | rutas Next.js |
 
 ## SIGUIENTE
-1. Proyecto cerrado: 12/12 tareas done, build + E2E + Lighthouse en verde.
-2. Opcional: `git init` + primer commit; sustituir placeholders SVG por arte propio si se publica.
+1. Proyecto cerrado y mejorado: 12/12 tareas, A1 (footer), A2 (SEO/404) y C7 (CI) done; build + 10/10 E2E en verde.
+2. Antes de publicar: definir `NEXT_PUBLIC_SITE_URL` y sustituir los placeholders SVG por arte definitivo.
+3. Opcional: B4 (selector 1080p/4K/8K), B5 (tags + breadcrumbs), B6 (Random en header).
