@@ -8,13 +8,7 @@ export const metadata: Metadata = {
   description: "Wallpapers 4K inspiradores para tu pantalla.",
 };
 
-type CoolWallpapersPageProps = {
-  searchParams: Promise<{ page?: string }>;
-};
-
-export default async function CoolWallpapersPage({ searchParams }: CoolWallpapersPageProps) {
-  const { page } = await searchParams;
-
+export default async function CoolWallpapersPage() {
   return (
     <main className="mx-auto w-full max-w-container px-4 py-10">
       <header className="mb-8">
@@ -22,7 +16,9 @@ export default async function CoolWallpapersPage({ searchParams }: CoolWallpaper
         <p className="mt-2 text-muted">Los mejores wallpapers 4K para tu pantalla.</p>
       </header>
       <CollectionsStrip />
-      <CategoryBrowser items={wallpapers} page={Number(page) || 1} />
+      {/* Ruta estática (T-014): el servidor pre-renderiza página 1 y CategoryBrowser
+          resuelve ?page=N tras montar, para que el <head> incluya title/description. */}
+      <CategoryBrowser items={wallpapers} />
     </main>
   );
 }

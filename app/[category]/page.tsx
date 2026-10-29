@@ -2,12 +2,17 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CategoryBrowser } from "@/components/CategoryBrowser";
-import { getByCategory } from "@/lib/wallpapers";
+import { getByCategory, wallpapers } from "@/lib/wallpapers";
 
 type CategoryPageProps = {
   params: Promise<{ category: string }>;
-  searchParams: Promise<{ page?: string }>;
 };
+
+export async function generateStaticParams() {
+  return [...new Set(wallpapers.map((item) => item.category))].map((category) => ({
+    category,
+  }));
+}
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { category } = await params;
@@ -17,9 +22,8 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   };
 }
 
-export default async function CategoryPage({ params, searchParams }: CategoryPageProps) {
+export default async function CategoryPage({ params }: CategoryPageProps) {
   const { category } = await params;
-  const { page } = await searchParams;
   const items = getByCategory(category);
 
   if (items.length === 0) {
@@ -40,7 +44,8 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="mt-2 text-muted">Wallpapers de la categoría {title}.</p>
       </header>
-      <CategoryBrowser items={items} page={Number(page) || 1} />
+      {/* SSG (T-014): página 1 en el HTML y ?page=N resuelto tras montar. */}
+      <CategoryBrowser items={items} />
     </main>
   );
 }

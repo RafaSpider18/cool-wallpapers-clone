@@ -20,9 +20,10 @@ test("3. ?page=2 muestra otra tanda de cards", async ({ page }) => {
 
   await page.goto("/cool-wallpapers?page=2");
   await expect(cards(page)).toHaveCount(12);
-  const firstOnPageTwo = await cards(page).first().locator("a").first().getAttribute("href");
-
-  expect(firstOnPageTwo).not.toBe(firstOnPageOne);
+  // ?page=N se resuelve tras montar (rutas estáticas, T-014): esperar al cambio.
+  await expect
+    .poll(async () => await cards(page).first().locator("a").first().getAttribute("href"))
+    .not.toBe(firstOnPageOne);
 });
 
 test("4. /abstract solo lista wallpapers de abstract", async ({ page }) => {

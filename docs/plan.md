@@ -19,6 +19,7 @@ Replicar el comportamiento de `https://4kwallpapers.com/cool-wallpapers`: navega
 | 10 | C7: CI en GitHub Actions (build + tipos + lint + E2E) | done |
 | 11 | B4: selector 1080p/4K/8K · B5: breadcrumbs y tags · B6: Random en header | done |
 | 12 | T-013: arte raster propio (JPEG determinista, thumbs + full 1080p/4K; 8K retirado) | done — ver `.agents/tasks/T-013.result.md` |
+| 13 | T-014: rutas estáticas (listado/categorías) para `meta` en `<head>`; SEO 92→100 | done — ver `.agents/tasks/T-014.result.md` |
 
 ## Rutas
 | Ruta | Contenido |
