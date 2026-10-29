@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------
+   Tokens — fuente: docs/design-spec.md §3
+   Los componentes consumen estos tokens vía Tailwind (bg-surface,
+   text-muted, border-border, rounded-card, max-w-container, …).
+   No hardcodear colores en componentes.
+   ------------------------------------------------------------------ */
+:root {
+  color-scheme: dark;
+
+  /* Color */
+  --bg: #0b0b0d;
+  --surface: #151518;
+  --surface-2: #1e1e22;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+  --accent: #f43f5e;
+  --border: #2a2a30;
+
+  /* Radios */
+  --radius: 12px;
+  --radius-card: var(--radius);
+  --radius-button: 8px;
+
+  /* Tipografía */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Layout */
+  --container: 1400px;
+  --gap: 16px;
+  --gap-lg: 20px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+    min-height: 100vh;
+  }
+
+  /* Foco visible consistente en todo el sitio (AA sobre bg/surface). */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-button);
+  }
+
+  ::selection {
+    background-color: var(--accent);
+    color: var(--text);
+  }
+}

@@ -1,0 +1,962 @@
+[
+  {
+    "id": 1,
+    "slug": "aurora-veil",
+    "title": "Aurora Veil",
+    "category": "abstract",
+    "tags": [
+      "abstract",
+      "gradient",
+      "minimal"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/1.svg",
+    "full": "/walls/full/aurora-veil-1920x1080-1.svg",
+    "dominant": "#7c3aed"
+  },
+  {
+    "id": 2,
+    "slug": "prism-drift",
+    "title": "Prism Drift",
+    "category": "abstract",
+    "tags": [
+      "abstract",
+      "color",
+      "hd"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/2.svg",
+    "full": "/walls/full/prism-drift-1920x1080-2.svg",
+    "dominant": "#06b6d4"
+  },
+  {
+    "id": 3,
+    "slug": "wild-echo",
+    "title": "Wild Echo",
+    "category": "animals",
+    "tags": [
+      "animals",
+      "wildlife",
+      "nature"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/3.svg",
+    "full": "/walls/full/wild-echo-1920x1080-3.svg",
+    "dominant": "#65a30d"
+  },
+  {
+    "id": 4,
+    "slug": "gentle-paw",
+    "title": "Gentle Paw",
+    "category": "animals",
+    "tags": [
+      "animals",
+      "cute",
+      "pet"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/4.svg",
+    "full": "/walls/full/gentle-paw-1920x1080-4.svg",
+    "dominant": "#f59e0b"
+  },
+  {
+    "id": 5,
+    "slug": "neon-ronin",
+    "title": "Neon Ronin",
+    "category": "anime",
+    "tags": [
+      "anime",
+      "neon",
+      "samurai"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/5.svg",
+    "full": "/walls/full/neon-ronin-1920x1080-5.svg",
+    "dominant": "#ec4899"
+  },
+  {
+    "id": 6,
+    "slug": "star-kami",
+    "title": "Star Kami",
+    "category": "anime",
+    "tags": [
+      "anime",
+      "space",
+      "divine"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/6.svg",
+    "full": "/walls/full/star-kami-1920x1080-6.svg",
+    "dominant": "#8b5cf6"
+  },
+  {
+    "id": 7,
+    "slug": "steel-skyline",
+    "title": "Steel Skyline",
+    "category": "architecture",
+    "tags": [
+      "architecture",
+      "city",
+      "urban"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/7.svg",
+    "full": "/walls/full/steel-skyline-1920x1080-7.svg",
+    "dominant": "#64748b"
+  },
+  {
+    "id": 8,
+    "slug": "glass-spire",
+    "title": "Glass Spire",
+    "category": "architecture",
+    "tags": [
+      "architecture",
+      "minimal",
+      "tower"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/8.svg",
+    "full": "/walls/full/glass-spire-1920x1080-8.svg",
+    "dominant": "#38bdf8"
+  },
+  {
+    "id": 9,
+    "slug": "midnight-ride",
+    "title": "Midnight Ride",
+    "category": "bikes",
+    "tags": [
+      "bikes",
+      "motorcycle",
+      "night"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/9.svg",
+    "full": "/walls/full/midnight-ride-1920x1080-9.svg",
+    "dominant": "#ef4444"
+  },
+  {
+    "id": 10,
+    "slug": "coastal-dash",
+    "title": "Coastal Dash",
+    "category": "bikes",
+    "tags": [
+      "bikes",
+      "coast",
+      "sport"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/10.svg",
+    "full": "/walls/full/coastal-dash-1920x1080-10.svg",
+    "dominant": "#14b8a6"
+  },
+  {
+    "id": 11,
+    "slug": "void-pulse",
+    "title": "Void Pulse",
+    "category": "black-dark",
+    "tags": [
+      "black",
+      "dark",
+      "night"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/11.svg",
+    "full": "/walls/full/void-pulse-1920x1080-11.svg",
+    "dominant": "#1e293b"
+  },
+  {
+    "id": 12,
+    "slug": "nocturne",
+    "title": "Nocturne",
+    "category": "black-dark",
+    "tags": [
+      "black",
+      "blue",
+      "dark"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/12.svg",
+    "full": "/walls/full/nocturne-1920x1080-12.svg",
+    "dominant": "#312e81"
+  },
+  {
+    "id": 13,
+    "slug": "redline-dream",
+    "title": "Redline Dream",
+    "category": "cars",
+    "tags": [
+      "cars",
+      "supercar",
+      "sport"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/13.svg",
+    "full": "/walls/full/redline-dream-1920x1080-13.svg",
+    "dominant": "#dc2626"
+  },
+  {
+    "id": 14,
+    "slug": "midnight-gt",
+    "title": "Midnight GT",
+    "category": "cars",
+    "tags": [
+      "cars",
+      "gt",
+      "night"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/14.svg",
+    "full": "/walls/full/midnight-gt-1920x1080-14.svg",
+    "dominant": "#334155"
+  },
+  {
+    "id": 15,
+    "slug": "festival-glow",
+    "title": "Festival Glow",
+    "category": "celebrations",
+    "tags": [
+      "celebrations",
+      "party",
+      "glow"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/15.svg",
+    "full": "/walls/full/festival-glow-1920x1080-15.svg",
+    "dominant": "#f97316"
+  },
+  {
+    "id": 16,
+    "slug": "fireworks-night",
+    "title": "Fireworks Night",
+    "category": "celebrations",
+    "tags": [
+      "celebrations",
+      "fireworks",
+      "night"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/16.svg",
+    "full": "/walls/full/fireworks-night-1920x1080-16.svg",
+    "dominant": "#eab308"
+  },
+  {
+    "id": 17,
+    "slug": "kawaii-day",
+    "title": "Kawaii Day",
+    "category": "cute",
+    "tags": [
+      "cute",
+      "kawaii",
+      "anime"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/17.svg",
+    "full": "/walls/full/kawaii-day-1920x1080-17.svg",
+    "dominant": "#f472b6"
+  },
+  {
+    "id": 18,
+    "slug": "bunny-halo",
+    "title": "Bunny Halo",
+    "category": "cute",
+    "tags": [
+      "cute",
+      "animal",
+      "spring"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/18.svg",
+    "full": "/walls/full/bunny-halo-1920x1080-18.svg",
+    "dominant": "#fb7185"
+  },
+  {
+    "id": 19,
+    "slug": "dragon-haze",
+    "title": "Dragon's Haze",
+    "category": "fantasy",
+    "tags": [
+      "fantasy",
+      "dragon",
+      "magic"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/19.svg",
+    "full": "/walls/full/dragon-haze-1920x1080-19.svg",
+    "dominant": "#a855f7"
+  },
+  {
+    "id": 20,
+    "slug": "arcane-grove",
+    "title": "Arcane Grove",
+    "category": "fantasy",
+    "tags": [
+      "fantasy",
+      "forest",
+      "magic"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/20.svg",
+    "full": "/walls/full/arcane-grove-1920x1080-20.svg",
+    "dominant": "#22c55e"
+  },
+  {
+    "id": 21,
+    "slug": "petal-storm",
+    "title": "Petal Storm",
+    "category": "flowers",
+    "tags": [
+      "flowers",
+      "nature",
+      "wind"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/21.svg",
+    "full": "/walls/full/petal-storm-1920x1080-21.svg",
+    "dominant": "#e11d48"
+  },
+  {
+    "id": 22,
+    "slug": "rose-circuit",
+    "title": "Rose Circuit",
+    "category": "flowers",
+    "tags": [
+      "flowers",
+      "garden",
+      "color"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/22.svg",
+    "full": "/walls/full/rose-circuit-1920x1080-22.svg",
+    "dominant": "#f97316"
+  },
+  {
+    "id": 23,
+    "slug": "taco-sunset",
+    "title": "Taco Sunset",
+    "category": "food",
+    "tags": [
+      "food",
+      "mexican",
+      "sunset"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/23.svg",
+    "full": "/walls/full/taco-sunset-1920x1080-23.svg",
+    "dominant": "#ea580c"
+  },
+  {
+    "id": 24,
+    "slug": "sushi-wave",
+    "title": "Sushi Wave",
+    "category": "food",
+    "tags": [
+      "food",
+      "japanese",
+      "ocean"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/24.svg",
+    "full": "/walls/full/sushi-wave-1920x1080-24.svg",
+    "dominant": "#06b6d4"
+  },
+  {
+    "id": 25,
+    "slug": "pixel-dawn",
+    "title": "Pixel Dawn",
+    "category": "games",
+    "tags": [
+      "games",
+      "pixel",
+      "8bit"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/25.svg",
+    "full": "/walls/full/pixel-dawn-1920x1080-25.svg",
+    "dominant": "#22c55e"
+  },
+  {
+    "id": 26,
+    "slug": "boss-rush",
+    "title": "Boss Rush",
+    "category": "games",
+    "tags": [
+      "games",
+      "boss",
+      "action"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/26.svg",
+    "full": "/walls/full/boss-rush-1920x1080-26.svg",
+    "dominant": "#ef4444"
+  },
+  {
+    "id": 27,
+    "slug": "sunset-fade",
+    "title": "Sunset Fade",
+    "category": "gradients",
+    "tags": [
+      "gradients",
+      "sunset",
+      "smooth"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/27.svg",
+    "full": "/walls/full/sunset-fade-1920x1080-27.svg",
+    "dominant": "#f59e0b"
+  },
+  {
+    "id": 28,
+    "slug": "ocean-glow",
+    "title": "Ocean Glow",
+    "category": "gradients",
+    "tags": [
+      "gradients",
+      "ocean",
+      "blue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/28.svg",
+    "full": "/walls/full/ocean-glow-1920x1080-28.svg",
+    "dominant": "#0ea5e9"
+  },
+  {
+    "id": 29,
+    "slug": "render-7",
+    "title": "Render 7",
+    "category": "cgi",
+    "tags": [
+      "cgi",
+      "render",
+      "3d"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/29.svg",
+    "full": "/walls/full/render-7-1920x1080-29.svg",
+    "dominant": "#a855f7"
+  },
+  {
+    "id": 30,
+    "slug": "poly-haven",
+    "title": "Poly Haven",
+    "category": "cgi",
+    "tags": [
+      "cgi",
+      "3d",
+      "studio"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/30.svg",
+    "full": "/walls/full/poly-haven-1920x1080-30.svg",
+    "dominant": "#6366f1"
+  },
+  {
+    "id": 31,
+    "slug": "urban-quiet",
+    "title": "Urban Quiet",
+    "category": "lifestyle",
+    "tags": [
+      "lifestyle",
+      "city",
+      "minimal"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/31.svg",
+    "full": "/walls/full/urban-quiet-1920x1080-31.svg",
+    "dominant": "#94a3b8"
+  },
+  {
+    "id": 32,
+    "slug": "morning-light",
+    "title": "Morning Light",
+    "category": "lifestyle",
+    "tags": [
+      "lifestyle",
+      "morning",
+      "home"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/32.svg",
+    "full": "/walls/full/morning-light-1920x1080-32.svg",
+    "dominant": "#fbbf24"
+  },
+  {
+    "id": 33,
+    "slug": "heartbeat",
+    "title": "Heartbeat",
+    "category": "love",
+    "tags": [
+      "love",
+      "heart",
+      "red"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/33.svg",
+    "full": "/walls/full/heartbeat-1920x1080-33.svg",
+    "dominant": "#f43f5e"
+  },
+  {
+    "id": 34,
+    "slug": "adore",
+    "title": "Adore",
+    "category": "love",
+    "tags": [
+      "love",
+      "couple",
+      "soft"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/34.svg",
+    "full": "/walls/full/adore-1920x1080-34.svg",
+    "dominant": "#fb7185"
+  },
+  {
+    "id": 35,
+    "slug": "tactical-dusk",
+    "title": "Tactical Dusk",
+    "category": "military",
+    "tags": [
+      "military",
+      "tactical",
+      "army"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/35.svg",
+    "full": "/walls/full/tactical-dusk-1920x1080-35.svg",
+    "dominant": "#475569"
+  },
+  {
+    "id": 36,
+    "slug": "iron-horizon",
+    "title": "Iron Horizon",
+    "category": "military",
+    "tags": [
+      "military",
+      "army",
+      "armor"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/36.svg",
+    "full": "/walls/full/iron-horizon-1920x1080-36.svg",
+    "dominant": "#64748b"
+  },
+  {
+    "id": 37,
+    "slug": "mono-silence",
+    "title": "Mono Silence",
+    "category": "minimal",
+    "tags": [
+      "minimal",
+      "mono",
+      "black"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/37.svg",
+    "full": "/walls/full/mono-silence-1920x1080-37.svg",
+    "dominant": "#94a3b8"
+  },
+  {
+    "id": 38,
+    "slug": "bare-space",
+    "title": "Bare Space",
+    "category": "minimal",
+    "tags": [
+      "minimal",
+      "space",
+      "calm"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/38.svg",
+    "full": "/walls/full/bare-space-1920x1080-38.svg",
+    "dominant": "#a8a29e"
+  },
+  {
+    "id": 39,
+    "slug": "reel-shadow",
+    "title": "Reel Shadow",
+    "category": "movies",
+    "tags": [
+      "movies",
+      "cinema",
+      "night"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/39.svg",
+    "full": "/walls/full/reel-shadow-1920x1080-39.svg",
+    "dominant": "#334155"
+  },
+  {
+    "id": 40,
+    "slug": "silver-screen",
+    "title": "Silver Screen",
+    "category": "movies",
+    "tags": [
+      "movies",
+      "film",
+      "classic"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/40.svg",
+    "full": "/walls/full/silver-screen-1920x1080-40.svg",
+    "dominant": "#94a3b8"
+  },
+  {
+    "id": 41,
+    "slug": "bassline",
+    "title": "Bassline",
+    "category": "music",
+    "tags": [
+      "music",
+      "bass",
+      "energy"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/41.svg",
+    "full": "/walls/full/bassline-1920x1080-41.svg",
+    "dominant": "#8b5cf6"
+  },
+  {
+    "id": 42,
+    "slug": "vinyl-haze",
+    "title": "Vinyl Haze",
+    "category": "music",
+    "tags": [
+      "music",
+      "vinyl",
+      "retro"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/42.svg",
+    "full": "/walls/full/vinyl-haze-1920x1080-42.svg",
+    "dominant": "#d946ef"
+  },
+  {
+    "id": 43,
+    "slug": "misty-ridge",
+    "title": "Misty Ridge",
+    "category": "nature",
+    "tags": [
+      "nature",
+      "mountain",
+      "fog"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/43.svg",
+    "full": "/walls/full/misty-ridge-1920x1080-43.svg",
+    "dominant": "#38bdf8"
+  },
+  {
+    "id": 44,
+    "slug": "forest-whisper",
+    "title": "Forest Whisper",
+    "category": "nature",
+    "tags": [
+      "nature",
+      "forest",
+      "green"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/44.svg",
+    "full": "/walls/full/forest-whisper-1920x1080-44.svg",
+    "dominant": "#16a34a"
+  },
+  {
+    "id": 45,
+    "slug": "studio-light",
+    "title": "Studio Light",
+    "category": "people",
+    "tags": [
+      "people",
+      "portrait",
+      "light"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/45.svg",
+    "full": "/walls/full/studio-light-1920x1080-45.svg",
+    "dominant": "#f472b6"
+  },
+  {
+    "id": 46,
+    "slug": "crowd-glow",
+    "title": "Crowd Glow",
+    "category": "people",
+    "tags": [
+      "people",
+      "city",
+      "night"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/46.svg",
+    "full": "/walls/full/crowd-glow-1920x1080-46.svg",
+    "dominant": "#fb923c"
+  },
+  {
+    "id": 47,
+    "slug": "golden-hour",
+    "title": "Golden Hour",
+    "category": "photography",
+    "tags": [
+      "photography",
+      "golden",
+      "sunset"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/47.svg",
+    "full": "/walls/full/golden-hour-1920x1080-47.svg",
+    "dominant": "#f59e0b"
+  },
+  {
+    "id": 48,
+    "slug": "aperture",
+    "title": "Aperture",
+    "category": "photography",
+    "tags": [
+      "photography",
+      "camera",
+      "lens"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/48.svg",
+    "full": "/walls/full/aperture-1920x1080-48.svg",
+    "dominant": "#60a5fa"
+  },
+  {
+    "id": 49,
+    "slug": "still-words",
+    "title": "Still Words",
+    "category": "quotes",
+    "tags": [
+      "quotes",
+      "minimal",
+      "peace"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/49.svg",
+    "full": "/walls/full/still-words-1920x1080-49.svg",
+    "dominant": "#a8a29e"
+  },
+  {
+    "id": 50,
+    "slug": "silent-echo",
+    "title": "Silent Echo",
+    "category": "quotes",
+    "tags": [
+      "quotes",
+      "poetry",
+      "calm"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/50.svg",
+    "full": "/walls/full/silent-echo-1920x1080-50.svg",
+    "dominant": "#818cf8"
+  },
+  {
+    "id": 51,
+    "slug": "starship-drift",
+    "title": "Starship Drift",
+    "category": "scifi",
+    "tags": [
+      "scifi",
+      "space",
+      "ship"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/51.svg",
+    "full": "/walls/full/starship-drift-1920x1080-51.svg",
+    "dominant": "#38bdf8"
+  },
+  {
+    "id": 52,
+    "slug": "cyber-dawn",
+    "title": "Cyber Dawn",
+    "category": "scifi",
+    "tags": [
+      "scifi",
+      "cyberpunk",
+      "neon"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/52.svg",
+    "full": "/walls/full/cyber-dawn-1920x1080-52.svg",
+    "dominant": "#22d3ee"
+  },
+  {
+    "id": 53,
+    "slug": "orbital-glow",
+    "title": "Orbital Glow",
+    "category": "space",
+    "tags": [
+      "space",
+      "planet",
+      "glow"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/53.svg",
+    "full": "/walls/full/orbital-glow-1920x1080-53.svg",
+    "dominant": "#818cf8"
+  },
+  {
+    "id": 54,
+    "slug": "cosmic-dust",
+    "title": "Cosmic Dust",
+    "category": "space",
+    "tags": [
+      "space",
+      "galaxy",
+      "stars"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/54.svg",
+    "full": "/walls/full/cosmic-dust-1920x1080-54.svg",
+    "dominant": "#c084fc"
+  },
+  {
+    "id": 55,
+    "slug": "velocity",
+    "title": "Velocity",
+    "category": "sports",
+    "tags": [
+      "sports",
+      "speed",
+      "track"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/55.svg",
+    "full": "/walls/full/velocity-1920x1080-55.svg",
+    "dominant": "#ef4444"
+  },
+  {
+    "id": 56,
+    "slug": "final-sprint",
+    "title": "Final Sprint",
+    "category": "sports",
+    "tags": [
+      "sports",
+      "running",
+      "energy"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/56.svg",
+    "full": "/walls/full/final-sprint-1920x1080-56.svg",
+    "dominant": "#f97316"
+  },
+  {
+    "id": 57,
+    "slug": "circuit-glow",
+    "title": "Circuit Glow",
+    "category": "technology",
+    "tags": [
+      "technology",
+      "circuit",
+      "tech"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/57.svg",
+    "full": "/walls/full/circuit-glow-1920x1080-57.svg",
+    "dominant": "#4f46e5"
+  },
+  {
+    "id": 58,
+    "slug": "data-stream",
+    "title": "Data Stream",
+    "category": "technology",
+    "tags": [
+      "technology",
+      "data",
+      "flow"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/58.svg",
+    "full": "/walls/full/data-stream-1920x1080-58.svg",
+    "dominant": "#60a5fa"
+  },
+  {
+    "id": 59,
+    "slug": "terra-nova",
+    "title": "Terra Nova",
+    "category": "world",
+    "tags": [
+      "world",
+      "earth",
+      "planet"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/59.svg",
+    "full": "/walls/full/terra-nova-1920x1080-59.svg",
+    "dominant": "#34d399"
+  },
+  {
+    "id": 60,
+    "slug": "global-echo",
+    "title": "Global Echo",
+    "category": "world",
+    "tags": [
+      "world",
+      "global",
+      "community"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "thumb": "/walls/thumbs/60.svg",
+    "full": "/walls/full/global-echo-1920x1080-60.svg",
+    "dominant": "#facc15"
+  }
+]

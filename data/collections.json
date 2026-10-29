@@ -1,0 +1,12 @@
+[
+  { "slug": "cinema", "title": "Cinema", "category": "movies", "thumb": "/walls/thumbs/39.svg" },
+  { "slug": "noir", "title": "Noir", "category": "black-dark", "thumb": "/walls/thumbs/11.svg" },
+  { "slug": "neon", "title": "Neon", "category": "anime", "thumb": "/walls/thumbs/5.svg" },
+  { "slug": "skyline", "title": "Skyline", "category": "architecture", "thumb": "/walls/thumbs/7.svg" },
+  { "slug": "wildlife", "title": "Wildlife", "category": "animals", "thumb": "/walls/thumbs/3.svg" },
+  { "slug": "astro", "title": "Astro", "category": "space", "thumb": "/walls/thumbs/53.svg" },
+  { "slug": "pixel", "title": "Pixel", "category": "games", "thumb": "/walls/thumbs/25.svg" },
+  { "slug": "minimal", "title": "Minimal", "category": "minimal", "thumb": "/walls/thumbs/37.svg" },
+  { "slug": "portrait", "title": "Portrait", "category": "people", "thumb": "/walls/thumbs/45.svg" },
+  { "slug": "tech", "title": "Tech", "category": "technology", "thumb": "/walls/thumbs/57.svg" }
+]

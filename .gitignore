@@ -1,0 +1,30 @@
+# dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# build
+.next/
+out/
+build/
+dist/
+
+# entorno
+.env*
+!.env.example
+
+# next
+next-env.d.ts
+
+# tests
+test-results/
+playwright-report/
+coverage/
+
+# sistema
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+*.tsbuildinfo
+.agents/tasks/.queue.lock
