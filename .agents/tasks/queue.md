@@ -41,3 +41,4 @@ Dueño: `W1` · `W2` · `creador`
 | 2026-10-28 | T-017 | done — `/search` noindex,follow (meta) además de robots.txt |
 | 2026-10-28 | T-018 | done — `/tag/[tag]` SSG (60 rutas) + hub `/tags`; sitemap y detalle actualizados |
 | 2026-10-28 | T-019 | done — 24 fotos reales de Commons con crédito (ADR-9); catálogo 84 items; 15/15 E2E; Lighthouse 100×4 |
+| 2026-10-28 | — | re-deploy producción verificado: sitemap 181 URLs, tags/credits 200, noindex en /search, crédito en ficha, 4K de foto 2.9 MB |
