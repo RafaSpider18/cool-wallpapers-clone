@@ -133,19 +133,22 @@ test("11. el selector de resolución cambia la descarga", async ({ page, request
   await page.goto("/abstract/aurora-veil-1.html");
   const download = page.locator("article a[download]");
   await expect(download).toHaveAttribute("href", /3840x2160/);
+  await expect(download).toHaveAttribute("download", /\.jpg$/);
 
-  await page.getByText("8K", { exact: true }).click();
-  await expect(page.getByText(/Resolución: 8K/)).toBeVisible();
-  await expect(download).toHaveAttribute("href", /7680x4320/);
-  await expect(download).toHaveAttribute("download", /7680x4320/);
+  const picker = page.getByRole("group");
 
-  const asset = await request.get("/walls/full/aurora-veil-7680x4320-1.svg");
-  expect(asset.status()).toBe(200);
-  expect(asset.headers()["content-type"]).toContain("image/svg+xml");
-
-  await page.getByText("1080p", { exact: true }).click();
+  await picker.getByText("1080p", { exact: true }).click();
   await expect(page.getByText(/Resolución: 1080p/)).toBeVisible();
   await expect(download).toHaveAttribute("href", /1920x1080/);
+
+  const asset = await request.get("/walls/full/aurora-veil-1920x1080-1.jpg");
+  expect(asset.status()).toBe(200);
+  expect(asset.headers()["content-type"]).toContain("image/jpeg");
+  expect((await asset.body()).byteLength).toBeGreaterThan(1000);
+
+  await picker.getByText("4K", { exact: true }).click();
+  await expect(page.getByText(/Resolución: 4K/)).toBeVisible();
+  await expect(download).toHaveAttribute("href", /3840x2160/);
 });
 
 test("12. breadcrumbs y tags navegables", async ({ page }) => {

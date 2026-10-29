@@ -5,7 +5,7 @@ Réplica de **UX, rutas y funcionalidad** con catálogo propio. No se copian im�
 ## Stack
 - Next.js 15 (App Router) + TypeScript + Tailwind CSS
 - Datos locales: `data/wallpapers.json`
-- Imágenes: placeholders generados en `public/walls/`
+- Imágenes: arte raster generado proceduralmente en `public/walls/` (sin assets externos).
 
 ## Roles
 | Rol | Archivo | Quién |

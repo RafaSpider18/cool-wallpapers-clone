@@ -61,7 +61,7 @@ export function ResolutionPicker({
 
       <a
         href={selected.url}
-        download={`${slug}-${selected.width}x${selected.height}.svg`}
+        download={`${slug}-${selected.width}x${selected.height}${selected.url.slice(selected.url.lastIndexOf("."))}`}
         className="mt-4 inline-block rounded-[8px] bg-accent px-6 py-3 text-sm font-semibold text-bg"
       >
         Download {selected.label}

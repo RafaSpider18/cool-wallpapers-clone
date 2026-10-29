@@ -66,5 +66,5 @@ type Wallpaper = {
 ```
 
 ## 5. Diferencias aceptadas
-- Sin imágenes reales: placeholders generados con color dominante.
+- Sin imágenes reales: arte raster 100 % propio (`gen-assets.mjs`, JPEG determinista con 7 escenas estilizadas por categoría).
 - Sin cuentas, uploads, apps móviles ni publicidad.

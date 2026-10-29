@@ -26,6 +26,7 @@
 - B4 done: 60 items × 3 variantes SVG (1080p/4K/8K, 180 archivos) + `components/ResolutionPicker.tsx`; la descarga cambia de archivo y nombre.
 - B5 done: `components/Breadcrumbs.tsx` en categoría y detalle + tags del detalle enlazan a `/search?q=<tag>`.
 - B6 done: enlace `Random` en el header, junto a Categories; E2E 13/13.
+- T-013 done (supervisor): arte raster JPEG propio (180 archivos, ~9 MB: thumb 640×360 + full 1080p/4K), 7 escenas por categoría en `gen-assets.mjs`; catálogo/collections a `.jpg`; E2E caso 11 en JPEG.
 
 ## DECISIONES
 - **ADR-1** Next.js 15 + Tailwind + TS. Datos en `data/wallpapers.json`. Imágenes placeholder generadas.
@@ -35,7 +36,7 @@
 - **ADR-5** Cloudflare bloquea HTTP directo al sitio; tokens propios inferidos y marcados en `docs/design-spec.md`. REA con navegador real queda como verificación opcional.
 - **ADR-6** Escritor único de estado: los workers solo escriben `.agents/tasks/T-XXX.result.md`; `queue.md` y `MEMORIA.md` los tocan únicamente el delegador (con lock) y el supervisor.
 - **ADR-7** URL pública por `NEXT_PUBLIC_SITE_URL` con fallback `http://localhost:3000`; sitemap, robots y metadatos sociales se construyen desde `lib/site.ts`.
-- **ADR-8** El arte es SVG vectorial: cada item tiene variantes nominales 1080p/4K/8K y el selector descarga el archivo elegido; no hay raster ni CDN.
+- **ADR-8** El arte es raster JPEG determinista generado por `scripts/gen-assets.mjs` (Playwright/Chromium, 7 escenas por categoría, seeds por id): thumbs 640×360 + full 1080p/4K; la variante 8K se retiró por peso. Sin raster externo ni CDN.
 
 ## TAREAS
 Ver `.agents/tasks/queue.md` (fuente única de verdad).
@@ -49,6 +50,6 @@ Ver `.agents/tasks/queue.md` (fuente única de verdad).
 | `app/` | rutas Next.js |
 
 ## SIGUIENTE
-1. Proyecto cerrado y mejorado: 12/12 tareas + A1, A2, C7 y B4–B6 done; build + 13/13 E2E en verde.
-2. Antes de publicar: definir `NEXT_PUBLIC_SITE_URL` y sustituir los placeholders SVG por arte definitivo.
-3. Sin pendientes funcionales acordados; próximos pasos serían despliegue y contenido real.
+1. Proyecto cerrado y mejorado: T-001..T-013 + A1, A2, C7 y B4–B6 done; build + 13/13 E2E en verde.
+2. T-014 (SEO, pendiente): paginación client-side + `generateStaticParams` en listado/categorías para que `meta description` caiga dentro del `<head>` (Lighthouse SEO 92 → 100).
+3. Preparar publicación (README, `.env.example` con `NEXT_PUBLIC_SITE_URL`) o despliegue con el usuario (GitHub/Vercel).

@@ -18,6 +18,7 @@ Replicar el comportamiento de `https://4kwallpapers.com/cool-wallpapers`: navega
 | 9 | A2: 404 propio, sitemap, robots, Open Graph/Twitter e icono | done |
 | 10 | C7: CI en GitHub Actions (build + tipos + lint + E2E) | done |
 | 11 | B4: selector 1080p/4K/8K · B5: breadcrumbs y tags · B6: Random en header | done |
+| 12 | T-013: arte raster propio (JPEG determinista, thumbs + full 1080p/4K; 8K retirado) | done — ver `.agents/tasks/T-013.result.md` |
 
 ## Rutas
 | Ruta | Contenido |
@@ -25,7 +26,7 @@ Replicar el comportamiento de `https://4kwallpapers.com/cool-wallpapers`: navega
 | `/` | redirect a `/cool-wallpapers` |
 | `/cool-wallpapers` | H1 + intro + grid + paginación + colecciones |
 | `/{categoria}` | igual, filtrado por categoría |
-| `/{categoria}/{slug}-{id}.html` | detalle + selector 1080p/4K/8K + descarga |
+| `/{categoria}/{slug}-{id}.html` | detalle + selector 1080p/4K (JPEG) + descarga |
 | `/search?q=` | resultados |
 | `/random` | redirect a un item aleatorio |
 | `/privacy`, `/terms`, `/copyright`, `/contact`, `/upload` | páginas informativas del footer |
