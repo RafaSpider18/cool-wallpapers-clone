@@ -47,7 +47,7 @@ test("5. el detalle muestra H1, tags y descarga local", async ({ page }) => {
   const download = page.locator("article a[download]");
   await expect(download).toBeVisible();
   await expect(download).toHaveAttribute("href", /^\/walls\/full\//);
-  await expect(download).toHaveText("Download");
+  await expect(download).toHaveText(/Download 4K/);
 });
 
 test("6. la búsqueda cuenta resultados y tiene estado vacío", async ({ page }) => {
@@ -127,6 +127,54 @@ test("10. 404 propio, sitemap, robots y metadatos sociales", async ({ page, requ
     "content",
     "summary_large_image",
   );
+});
+
+test("11. el selector de resolución cambia la descarga", async ({ page, request }) => {
+  await page.goto("/abstract/aurora-veil-1.html");
+  const download = page.locator("article a[download]");
+  await expect(download).toHaveAttribute("href", /3840x2160/);
+
+  await page.getByText("8K", { exact: true }).click();
+  await expect(page.getByText(/Resolución: 8K/)).toBeVisible();
+  await expect(download).toHaveAttribute("href", /7680x4320/);
+  await expect(download).toHaveAttribute("download", /7680x4320/);
+
+  const asset = await request.get("/walls/full/aurora-veil-7680x4320-1.svg");
+  expect(asset.status()).toBe(200);
+  expect(asset.headers()["content-type"]).toContain("image/svg+xml");
+
+  await page.getByText("1080p", { exact: true }).click();
+  await expect(page.getByText(/Resolución: 1080p/)).toBeVisible();
+  await expect(download).toHaveAttribute("href", /1920x1080/);
+});
+
+test("12. breadcrumbs y tags navegables", async ({ page }) => {
+  await page.goto("/abstract/aurora-veil-1.html");
+
+  const breadcrumb = page.getByRole("navigation", { name: "Breadcrumb" });
+  await expect(breadcrumb.getByRole("link", { name: "Abstract" })).toHaveAttribute(
+    "href",
+    "/abstract",
+  );
+  await expect(breadcrumb.getByText("Aurora Veil")).toHaveAttribute(
+    "aria-current",
+    "page",
+  );
+
+  await page
+    .locator("article")
+    .getByRole("link", { name: "gradient" })
+    .click();
+  await expect(page).toHaveURL(/\/search\?q=gradient$/);
+  await expect(page.getByText(/resultados? para/)).toBeVisible();
+  expect(await cards(page).count()).toBeGreaterThan(0);
+});
+
+test("13. Random del header lleva a un detalle", async ({ page }) => {
+  await page.goto("/cool-wallpapers");
+  await page.getByRole("link", { name: "Random" }).click();
+  await expect(page).toHaveURL(/\/[\w-]+\/[\w-]+-\d+\.html$/);
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 });
 
 

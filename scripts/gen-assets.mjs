@@ -10,6 +10,13 @@ const FULL_H = 1080;
 const THUMB_W = 640;
 const THUMB_H = 360;
 
+const RESOLUTIONS = [
+  { label: "1080p", width: 1920, height: 1080 },
+  { label: "4K", width: 3840, height: 2160 },
+  { label: "8K", width: 7680, height: 4320 },
+];
+const DEFAULT_RESOLUTION = RESOLUTIONS[1];
+
 function buildSvg(dominant, secondary, width, height, index) {
   const gradId = `grad${index}`;
   const cx = Math.round(width * (0.65 + ((index * 37) % 20) / 100));
@@ -97,18 +104,28 @@ const rawItems = [
   { id: 60, slug: "global-echo", title: "Global Echo", category: "world", tags: ["world", "global", "community"], width: FULL_W, height: FULL_H, dominant: "#facc15", secondary: "#713f12" },
 ];
 
-const wallpapers = rawItems.map((it) => ({
-  id: it.id,
-  slug: it.slug,
-  title: it.title,
-  category: it.category,
-  tags: it.tags,
-  width: it.width,
-  height: it.height,
-  thumb: `/walls/thumbs/${it.id}.svg`,
-  full: `/walls/full/${it.slug}-${it.width}x${it.height}-${it.id}.svg`,
-  dominant: it.dominant,
-}));
+const wallpapers = rawItems.map((it) => {
+  const resolutions = RESOLUTIONS.map((resolution) => ({
+    label: resolution.label,
+    width: resolution.width,
+    height: resolution.height,
+    url: `/walls/full/${it.slug}-${resolution.width}x${resolution.height}-${it.id}.svg`,
+  }));
+
+  return {
+    id: it.id,
+    slug: it.slug,
+    title: it.title,
+    category: it.category,
+    tags: it.tags,
+    width: DEFAULT_RESOLUTION.width,
+    height: DEFAULT_RESOLUTION.height,
+    thumb: `/walls/thumbs/${it.id}.svg`,
+    full: resolutions[1].url,
+    resolutions,
+    dominant: it.dominant,
+  };
+});
 
 const categories = new Set(wallpapers.map((w) => w.category));
 if (wallpapers.length !== 60) throw new Error(`Expected 60 items, got ${wallpapers.length}`);
@@ -121,9 +138,16 @@ mkdirSync(fullDir, { recursive: true });
 
 for (const it of rawItems) {
   writeFileSync(join(thumbsDir, `${it.id}.svg`), buildSvg(it.dominant, it.secondary, THUMB_W, THUMB_H, it.id));
-  writeFileSync(join(fullDir, `${it.slug}-${it.width}x${it.height}-${it.id}.svg`), buildSvg(it.dominant, it.secondary, it.width, it.height, it.id));
+  for (const resolution of RESOLUTIONS) {
+    writeFileSync(
+      join(fullDir, `${it.slug}-${resolution.width}x${resolution.height}-${it.id}.svg`),
+      buildSvg(it.dominant, it.secondary, resolution.width, resolution.height, it.id),
+    );
+  }
 }
 
 writeFileSync(join(rootDir, "data", "wallpapers.json"), JSON.stringify(wallpapers, null, 2) + "\n", "utf8");
 
-console.log(`T-003: generados ${wallpapers.length} placeholders y catálogo en data/wallpapers.json`);
+console.log(
+  `T-003: generados ${wallpapers.length} placeholders × ${RESOLUTIONS.length} resoluciones y catálogo en data/wallpapers.json`,
+);

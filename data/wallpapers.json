@@ -9,10 +9,30 @@
       "gradient",
       "minimal"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/1.svg",
-    "full": "/walls/full/aurora-veil-1920x1080-1.svg",
+    "full": "/walls/full/aurora-veil-3840x2160-1.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/aurora-veil-1920x1080-1.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/aurora-veil-3840x2160-1.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/aurora-veil-7680x4320-1.svg"
+      }
+    ],
     "dominant": "#7c3aed"
   },
   {
@@ -25,10 +45,30 @@
       "color",
       "hd"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/2.svg",
-    "full": "/walls/full/prism-drift-1920x1080-2.svg",
+    "full": "/walls/full/prism-drift-3840x2160-2.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/prism-drift-1920x1080-2.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/prism-drift-3840x2160-2.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/prism-drift-7680x4320-2.svg"
+      }
+    ],
     "dominant": "#06b6d4"
   },
   {
@@ -41,10 +81,30 @@
       "wildlife",
       "nature"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/3.svg",
-    "full": "/walls/full/wild-echo-1920x1080-3.svg",
+    "full": "/walls/full/wild-echo-3840x2160-3.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/wild-echo-1920x1080-3.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/wild-echo-3840x2160-3.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/wild-echo-7680x4320-3.svg"
+      }
+    ],
     "dominant": "#65a30d"
   },
   {
@@ -57,10 +117,30 @@
       "cute",
       "pet"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/4.svg",
-    "full": "/walls/full/gentle-paw-1920x1080-4.svg",
+    "full": "/walls/full/gentle-paw-3840x2160-4.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/gentle-paw-1920x1080-4.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/gentle-paw-3840x2160-4.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/gentle-paw-7680x4320-4.svg"
+      }
+    ],
     "dominant": "#f59e0b"
   },
   {
@@ -73,10 +153,30 @@
       "neon",
       "samurai"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/5.svg",
-    "full": "/walls/full/neon-ronin-1920x1080-5.svg",
+    "full": "/walls/full/neon-ronin-3840x2160-5.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/neon-ronin-1920x1080-5.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/neon-ronin-3840x2160-5.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/neon-ronin-7680x4320-5.svg"
+      }
+    ],
     "dominant": "#ec4899"
   },
   {
@@ -89,10 +189,30 @@
       "space",
       "divine"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/6.svg",
-    "full": "/walls/full/star-kami-1920x1080-6.svg",
+    "full": "/walls/full/star-kami-3840x2160-6.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/star-kami-1920x1080-6.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/star-kami-3840x2160-6.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/star-kami-7680x4320-6.svg"
+      }
+    ],
     "dominant": "#8b5cf6"
   },
   {
@@ -105,10 +225,30 @@
       "city",
       "urban"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/7.svg",
-    "full": "/walls/full/steel-skyline-1920x1080-7.svg",
+    "full": "/walls/full/steel-skyline-3840x2160-7.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/steel-skyline-1920x1080-7.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/steel-skyline-3840x2160-7.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/steel-skyline-7680x4320-7.svg"
+      }
+    ],
     "dominant": "#64748b"
   },
   {
@@ -121,10 +261,30 @@
       "minimal",
       "tower"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/8.svg",
-    "full": "/walls/full/glass-spire-1920x1080-8.svg",
+    "full": "/walls/full/glass-spire-3840x2160-8.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/glass-spire-1920x1080-8.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/glass-spire-3840x2160-8.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/glass-spire-7680x4320-8.svg"
+      }
+    ],
     "dominant": "#38bdf8"
   },
   {
@@ -137,10 +297,30 @@
       "motorcycle",
       "night"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/9.svg",
-    "full": "/walls/full/midnight-ride-1920x1080-9.svg",
+    "full": "/walls/full/midnight-ride-3840x2160-9.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/midnight-ride-1920x1080-9.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/midnight-ride-3840x2160-9.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/midnight-ride-7680x4320-9.svg"
+      }
+    ],
     "dominant": "#ef4444"
   },
   {
@@ -153,10 +333,30 @@
       "coast",
       "sport"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/10.svg",
-    "full": "/walls/full/coastal-dash-1920x1080-10.svg",
+    "full": "/walls/full/coastal-dash-3840x2160-10.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/coastal-dash-1920x1080-10.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/coastal-dash-3840x2160-10.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/coastal-dash-7680x4320-10.svg"
+      }
+    ],
     "dominant": "#14b8a6"
   },
   {
@@ -169,10 +369,30 @@
       "dark",
       "night"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/11.svg",
-    "full": "/walls/full/void-pulse-1920x1080-11.svg",
+    "full": "/walls/full/void-pulse-3840x2160-11.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/void-pulse-1920x1080-11.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/void-pulse-3840x2160-11.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/void-pulse-7680x4320-11.svg"
+      }
+    ],
     "dominant": "#1e293b"
   },
   {
@@ -185,10 +405,30 @@
       "blue",
       "dark"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/12.svg",
-    "full": "/walls/full/nocturne-1920x1080-12.svg",
+    "full": "/walls/full/nocturne-3840x2160-12.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/nocturne-1920x1080-12.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/nocturne-3840x2160-12.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/nocturne-7680x4320-12.svg"
+      }
+    ],
     "dominant": "#312e81"
   },
   {
@@ -201,10 +441,30 @@
       "supercar",
       "sport"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/13.svg",
-    "full": "/walls/full/redline-dream-1920x1080-13.svg",
+    "full": "/walls/full/redline-dream-3840x2160-13.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/redline-dream-1920x1080-13.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/redline-dream-3840x2160-13.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/redline-dream-7680x4320-13.svg"
+      }
+    ],
     "dominant": "#dc2626"
   },
   {
@@ -217,10 +477,30 @@
       "gt",
       "night"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/14.svg",
-    "full": "/walls/full/midnight-gt-1920x1080-14.svg",
+    "full": "/walls/full/midnight-gt-3840x2160-14.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/midnight-gt-1920x1080-14.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/midnight-gt-3840x2160-14.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/midnight-gt-7680x4320-14.svg"
+      }
+    ],
     "dominant": "#334155"
   },
   {
@@ -233,10 +513,30 @@
       "party",
       "glow"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/15.svg",
-    "full": "/walls/full/festival-glow-1920x1080-15.svg",
+    "full": "/walls/full/festival-glow-3840x2160-15.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/festival-glow-1920x1080-15.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/festival-glow-3840x2160-15.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/festival-glow-7680x4320-15.svg"
+      }
+    ],
     "dominant": "#f97316"
   },
   {
@@ -249,10 +549,30 @@
       "fireworks",
       "night"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/16.svg",
-    "full": "/walls/full/fireworks-night-1920x1080-16.svg",
+    "full": "/walls/full/fireworks-night-3840x2160-16.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/fireworks-night-1920x1080-16.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/fireworks-night-3840x2160-16.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/fireworks-night-7680x4320-16.svg"
+      }
+    ],
     "dominant": "#eab308"
   },
   {
@@ -265,10 +585,30 @@
       "kawaii",
       "anime"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/17.svg",
-    "full": "/walls/full/kawaii-day-1920x1080-17.svg",
+    "full": "/walls/full/kawaii-day-3840x2160-17.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/kawaii-day-1920x1080-17.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/kawaii-day-3840x2160-17.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/kawaii-day-7680x4320-17.svg"
+      }
+    ],
     "dominant": "#f472b6"
   },
   {
@@ -281,10 +621,30 @@
       "animal",
       "spring"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/18.svg",
-    "full": "/walls/full/bunny-halo-1920x1080-18.svg",
+    "full": "/walls/full/bunny-halo-3840x2160-18.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/bunny-halo-1920x1080-18.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/bunny-halo-3840x2160-18.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/bunny-halo-7680x4320-18.svg"
+      }
+    ],
     "dominant": "#fb7185"
   },
   {
@@ -297,10 +657,30 @@
       "dragon",
       "magic"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/19.svg",
-    "full": "/walls/full/dragon-haze-1920x1080-19.svg",
+    "full": "/walls/full/dragon-haze-3840x2160-19.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/dragon-haze-1920x1080-19.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/dragon-haze-3840x2160-19.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/dragon-haze-7680x4320-19.svg"
+      }
+    ],
     "dominant": "#a855f7"
   },
   {
@@ -313,10 +693,30 @@
       "forest",
       "magic"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/20.svg",
-    "full": "/walls/full/arcane-grove-1920x1080-20.svg",
+    "full": "/walls/full/arcane-grove-3840x2160-20.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/arcane-grove-1920x1080-20.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/arcane-grove-3840x2160-20.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/arcane-grove-7680x4320-20.svg"
+      }
+    ],
     "dominant": "#22c55e"
   },
   {
@@ -329,10 +729,30 @@
       "nature",
       "wind"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/21.svg",
-    "full": "/walls/full/petal-storm-1920x1080-21.svg",
+    "full": "/walls/full/petal-storm-3840x2160-21.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/petal-storm-1920x1080-21.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/petal-storm-3840x2160-21.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/petal-storm-7680x4320-21.svg"
+      }
+    ],
     "dominant": "#e11d48"
   },
   {
@@ -345,10 +765,30 @@
       "garden",
       "color"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/22.svg",
-    "full": "/walls/full/rose-circuit-1920x1080-22.svg",
+    "full": "/walls/full/rose-circuit-3840x2160-22.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/rose-circuit-1920x1080-22.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/rose-circuit-3840x2160-22.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/rose-circuit-7680x4320-22.svg"
+      }
+    ],
     "dominant": "#f97316"
   },
   {
@@ -361,10 +801,30 @@
       "mexican",
       "sunset"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/23.svg",
-    "full": "/walls/full/taco-sunset-1920x1080-23.svg",
+    "full": "/walls/full/taco-sunset-3840x2160-23.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/taco-sunset-1920x1080-23.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/taco-sunset-3840x2160-23.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/taco-sunset-7680x4320-23.svg"
+      }
+    ],
     "dominant": "#ea580c"
   },
   {
@@ -377,10 +837,30 @@
       "japanese",
       "ocean"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/24.svg",
-    "full": "/walls/full/sushi-wave-1920x1080-24.svg",
+    "full": "/walls/full/sushi-wave-3840x2160-24.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/sushi-wave-1920x1080-24.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/sushi-wave-3840x2160-24.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/sushi-wave-7680x4320-24.svg"
+      }
+    ],
     "dominant": "#06b6d4"
   },
   {
@@ -393,10 +873,30 @@
       "pixel",
       "8bit"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/25.svg",
-    "full": "/walls/full/pixel-dawn-1920x1080-25.svg",
+    "full": "/walls/full/pixel-dawn-3840x2160-25.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/pixel-dawn-1920x1080-25.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/pixel-dawn-3840x2160-25.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/pixel-dawn-7680x4320-25.svg"
+      }
+    ],
     "dominant": "#22c55e"
   },
   {
@@ -409,10 +909,30 @@
       "boss",
       "action"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/26.svg",
-    "full": "/walls/full/boss-rush-1920x1080-26.svg",
+    "full": "/walls/full/boss-rush-3840x2160-26.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/boss-rush-1920x1080-26.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/boss-rush-3840x2160-26.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/boss-rush-7680x4320-26.svg"
+      }
+    ],
     "dominant": "#ef4444"
   },
   {
@@ -425,10 +945,30 @@
       "sunset",
       "smooth"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/27.svg",
-    "full": "/walls/full/sunset-fade-1920x1080-27.svg",
+    "full": "/walls/full/sunset-fade-3840x2160-27.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/sunset-fade-1920x1080-27.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/sunset-fade-3840x2160-27.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/sunset-fade-7680x4320-27.svg"
+      }
+    ],
     "dominant": "#f59e0b"
   },
   {
@@ -441,10 +981,30 @@
       "ocean",
       "blue"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/28.svg",
-    "full": "/walls/full/ocean-glow-1920x1080-28.svg",
+    "full": "/walls/full/ocean-glow-3840x2160-28.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/ocean-glow-1920x1080-28.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/ocean-glow-3840x2160-28.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/ocean-glow-7680x4320-28.svg"
+      }
+    ],
     "dominant": "#0ea5e9"
   },
   {
@@ -457,10 +1017,30 @@
       "render",
       "3d"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/29.svg",
-    "full": "/walls/full/render-7-1920x1080-29.svg",
+    "full": "/walls/full/render-7-3840x2160-29.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/render-7-1920x1080-29.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/render-7-3840x2160-29.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/render-7-7680x4320-29.svg"
+      }
+    ],
     "dominant": "#a855f7"
   },
   {
@@ -473,10 +1053,30 @@
       "3d",
       "studio"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/30.svg",
-    "full": "/walls/full/poly-haven-1920x1080-30.svg",
+    "full": "/walls/full/poly-haven-3840x2160-30.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/poly-haven-1920x1080-30.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/poly-haven-3840x2160-30.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/poly-haven-7680x4320-30.svg"
+      }
+    ],
     "dominant": "#6366f1"
   },
   {
@@ -489,10 +1089,30 @@
       "city",
       "minimal"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/31.svg",
-    "full": "/walls/full/urban-quiet-1920x1080-31.svg",
+    "full": "/walls/full/urban-quiet-3840x2160-31.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/urban-quiet-1920x1080-31.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/urban-quiet-3840x2160-31.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/urban-quiet-7680x4320-31.svg"
+      }
+    ],
     "dominant": "#94a3b8"
   },
   {
@@ -505,10 +1125,30 @@
       "morning",
       "home"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/32.svg",
-    "full": "/walls/full/morning-light-1920x1080-32.svg",
+    "full": "/walls/full/morning-light-3840x2160-32.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/morning-light-1920x1080-32.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/morning-light-3840x2160-32.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/morning-light-7680x4320-32.svg"
+      }
+    ],
     "dominant": "#fbbf24"
   },
   {
@@ -521,10 +1161,30 @@
       "heart",
       "red"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/33.svg",
-    "full": "/walls/full/heartbeat-1920x1080-33.svg",
+    "full": "/walls/full/heartbeat-3840x2160-33.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/heartbeat-1920x1080-33.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/heartbeat-3840x2160-33.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/heartbeat-7680x4320-33.svg"
+      }
+    ],
     "dominant": "#f43f5e"
   },
   {
@@ -537,10 +1197,30 @@
       "couple",
       "soft"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/34.svg",
-    "full": "/walls/full/adore-1920x1080-34.svg",
+    "full": "/walls/full/adore-3840x2160-34.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/adore-1920x1080-34.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/adore-3840x2160-34.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/adore-7680x4320-34.svg"
+      }
+    ],
     "dominant": "#fb7185"
   },
   {
@@ -553,10 +1233,30 @@
       "tactical",
       "army"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/35.svg",
-    "full": "/walls/full/tactical-dusk-1920x1080-35.svg",
+    "full": "/walls/full/tactical-dusk-3840x2160-35.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/tactical-dusk-1920x1080-35.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/tactical-dusk-3840x2160-35.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/tactical-dusk-7680x4320-35.svg"
+      }
+    ],
     "dominant": "#475569"
   },
   {
@@ -569,10 +1269,30 @@
       "army",
       "armor"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/36.svg",
-    "full": "/walls/full/iron-horizon-1920x1080-36.svg",
+    "full": "/walls/full/iron-horizon-3840x2160-36.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/iron-horizon-1920x1080-36.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/iron-horizon-3840x2160-36.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/iron-horizon-7680x4320-36.svg"
+      }
+    ],
     "dominant": "#64748b"
   },
   {
@@ -585,10 +1305,30 @@
       "mono",
       "black"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/37.svg",
-    "full": "/walls/full/mono-silence-1920x1080-37.svg",
+    "full": "/walls/full/mono-silence-3840x2160-37.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/mono-silence-1920x1080-37.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/mono-silence-3840x2160-37.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/mono-silence-7680x4320-37.svg"
+      }
+    ],
     "dominant": "#94a3b8"
   },
   {
@@ -601,10 +1341,30 @@
       "space",
       "calm"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/38.svg",
-    "full": "/walls/full/bare-space-1920x1080-38.svg",
+    "full": "/walls/full/bare-space-3840x2160-38.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/bare-space-1920x1080-38.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/bare-space-3840x2160-38.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/bare-space-7680x4320-38.svg"
+      }
+    ],
     "dominant": "#a8a29e"
   },
   {
@@ -617,10 +1377,30 @@
       "cinema",
       "night"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/39.svg",
-    "full": "/walls/full/reel-shadow-1920x1080-39.svg",
+    "full": "/walls/full/reel-shadow-3840x2160-39.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/reel-shadow-1920x1080-39.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/reel-shadow-3840x2160-39.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/reel-shadow-7680x4320-39.svg"
+      }
+    ],
     "dominant": "#334155"
   },
   {
@@ -633,10 +1413,30 @@
       "film",
       "classic"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/40.svg",
-    "full": "/walls/full/silver-screen-1920x1080-40.svg",
+    "full": "/walls/full/silver-screen-3840x2160-40.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/silver-screen-1920x1080-40.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/silver-screen-3840x2160-40.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/silver-screen-7680x4320-40.svg"
+      }
+    ],
     "dominant": "#94a3b8"
   },
   {
@@ -649,10 +1449,30 @@
       "bass",
       "energy"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/41.svg",
-    "full": "/walls/full/bassline-1920x1080-41.svg",
+    "full": "/walls/full/bassline-3840x2160-41.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/bassline-1920x1080-41.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/bassline-3840x2160-41.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/bassline-7680x4320-41.svg"
+      }
+    ],
     "dominant": "#8b5cf6"
   },
   {
@@ -665,10 +1485,30 @@
       "vinyl",
       "retro"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/42.svg",
-    "full": "/walls/full/vinyl-haze-1920x1080-42.svg",
+    "full": "/walls/full/vinyl-haze-3840x2160-42.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/vinyl-haze-1920x1080-42.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/vinyl-haze-3840x2160-42.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/vinyl-haze-7680x4320-42.svg"
+      }
+    ],
     "dominant": "#d946ef"
   },
   {
@@ -681,10 +1521,30 @@
       "mountain",
       "fog"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/43.svg",
-    "full": "/walls/full/misty-ridge-1920x1080-43.svg",
+    "full": "/walls/full/misty-ridge-3840x2160-43.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/misty-ridge-1920x1080-43.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/misty-ridge-3840x2160-43.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/misty-ridge-7680x4320-43.svg"
+      }
+    ],
     "dominant": "#38bdf8"
   },
   {
@@ -697,10 +1557,30 @@
       "forest",
       "green"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/44.svg",
-    "full": "/walls/full/forest-whisper-1920x1080-44.svg",
+    "full": "/walls/full/forest-whisper-3840x2160-44.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/forest-whisper-1920x1080-44.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/forest-whisper-3840x2160-44.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/forest-whisper-7680x4320-44.svg"
+      }
+    ],
     "dominant": "#16a34a"
   },
   {
@@ -713,10 +1593,30 @@
       "portrait",
       "light"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/45.svg",
-    "full": "/walls/full/studio-light-1920x1080-45.svg",
+    "full": "/walls/full/studio-light-3840x2160-45.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/studio-light-1920x1080-45.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/studio-light-3840x2160-45.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/studio-light-7680x4320-45.svg"
+      }
+    ],
     "dominant": "#f472b6"
   },
   {
@@ -729,10 +1629,30 @@
       "city",
       "night"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/46.svg",
-    "full": "/walls/full/crowd-glow-1920x1080-46.svg",
+    "full": "/walls/full/crowd-glow-3840x2160-46.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/crowd-glow-1920x1080-46.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/crowd-glow-3840x2160-46.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/crowd-glow-7680x4320-46.svg"
+      }
+    ],
     "dominant": "#fb923c"
   },
   {
@@ -745,10 +1665,30 @@
       "golden",
       "sunset"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/47.svg",
-    "full": "/walls/full/golden-hour-1920x1080-47.svg",
+    "full": "/walls/full/golden-hour-3840x2160-47.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/golden-hour-1920x1080-47.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/golden-hour-3840x2160-47.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/golden-hour-7680x4320-47.svg"
+      }
+    ],
     "dominant": "#f59e0b"
   },
   {
@@ -761,10 +1701,30 @@
       "camera",
       "lens"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/48.svg",
-    "full": "/walls/full/aperture-1920x1080-48.svg",
+    "full": "/walls/full/aperture-3840x2160-48.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/aperture-1920x1080-48.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/aperture-3840x2160-48.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/aperture-7680x4320-48.svg"
+      }
+    ],
     "dominant": "#60a5fa"
   },
   {
@@ -777,10 +1737,30 @@
       "minimal",
       "peace"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/49.svg",
-    "full": "/walls/full/still-words-1920x1080-49.svg",
+    "full": "/walls/full/still-words-3840x2160-49.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/still-words-1920x1080-49.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/still-words-3840x2160-49.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/still-words-7680x4320-49.svg"
+      }
+    ],
     "dominant": "#a8a29e"
   },
   {
@@ -793,10 +1773,30 @@
       "poetry",
       "calm"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/50.svg",
-    "full": "/walls/full/silent-echo-1920x1080-50.svg",
+    "full": "/walls/full/silent-echo-3840x2160-50.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/silent-echo-1920x1080-50.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/silent-echo-3840x2160-50.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/silent-echo-7680x4320-50.svg"
+      }
+    ],
     "dominant": "#818cf8"
   },
   {
@@ -809,10 +1809,30 @@
       "space",
       "ship"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/51.svg",
-    "full": "/walls/full/starship-drift-1920x1080-51.svg",
+    "full": "/walls/full/starship-drift-3840x2160-51.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/starship-drift-1920x1080-51.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/starship-drift-3840x2160-51.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/starship-drift-7680x4320-51.svg"
+      }
+    ],
     "dominant": "#38bdf8"
   },
   {
@@ -825,10 +1845,30 @@
       "cyberpunk",
       "neon"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/52.svg",
-    "full": "/walls/full/cyber-dawn-1920x1080-52.svg",
+    "full": "/walls/full/cyber-dawn-3840x2160-52.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/cyber-dawn-1920x1080-52.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/cyber-dawn-3840x2160-52.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/cyber-dawn-7680x4320-52.svg"
+      }
+    ],
     "dominant": "#22d3ee"
   },
   {
@@ -841,10 +1881,30 @@
       "planet",
       "glow"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/53.svg",
-    "full": "/walls/full/orbital-glow-1920x1080-53.svg",
+    "full": "/walls/full/orbital-glow-3840x2160-53.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/orbital-glow-1920x1080-53.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/orbital-glow-3840x2160-53.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/orbital-glow-7680x4320-53.svg"
+      }
+    ],
     "dominant": "#818cf8"
   },
   {
@@ -857,10 +1917,30 @@
       "galaxy",
       "stars"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/54.svg",
-    "full": "/walls/full/cosmic-dust-1920x1080-54.svg",
+    "full": "/walls/full/cosmic-dust-3840x2160-54.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/cosmic-dust-1920x1080-54.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/cosmic-dust-3840x2160-54.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/cosmic-dust-7680x4320-54.svg"
+      }
+    ],
     "dominant": "#c084fc"
   },
   {
@@ -873,10 +1953,30 @@
       "speed",
       "track"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/55.svg",
-    "full": "/walls/full/velocity-1920x1080-55.svg",
+    "full": "/walls/full/velocity-3840x2160-55.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/velocity-1920x1080-55.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/velocity-3840x2160-55.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/velocity-7680x4320-55.svg"
+      }
+    ],
     "dominant": "#ef4444"
   },
   {
@@ -889,10 +1989,30 @@
       "running",
       "energy"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/56.svg",
-    "full": "/walls/full/final-sprint-1920x1080-56.svg",
+    "full": "/walls/full/final-sprint-3840x2160-56.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/final-sprint-1920x1080-56.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/final-sprint-3840x2160-56.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/final-sprint-7680x4320-56.svg"
+      }
+    ],
     "dominant": "#f97316"
   },
   {
@@ -905,10 +2025,30 @@
       "circuit",
       "tech"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/57.svg",
-    "full": "/walls/full/circuit-glow-1920x1080-57.svg",
+    "full": "/walls/full/circuit-glow-3840x2160-57.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/circuit-glow-1920x1080-57.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/circuit-glow-3840x2160-57.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/circuit-glow-7680x4320-57.svg"
+      }
+    ],
     "dominant": "#4f46e5"
   },
   {
@@ -921,10 +2061,30 @@
       "data",
       "flow"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/58.svg",
-    "full": "/walls/full/data-stream-1920x1080-58.svg",
+    "full": "/walls/full/data-stream-3840x2160-58.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/data-stream-1920x1080-58.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/data-stream-3840x2160-58.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/data-stream-7680x4320-58.svg"
+      }
+    ],
     "dominant": "#60a5fa"
   },
   {
@@ -937,10 +2097,30 @@
       "earth",
       "planet"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/59.svg",
-    "full": "/walls/full/terra-nova-1920x1080-59.svg",
+    "full": "/walls/full/terra-nova-3840x2160-59.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/terra-nova-1920x1080-59.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/terra-nova-3840x2160-59.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/terra-nova-7680x4320-59.svg"
+      }
+    ],
     "dominant": "#34d399"
   },
   {
@@ -953,10 +2133,30 @@
       "global",
       "community"
     ],
-    "width": 1920,
-    "height": 1080,
+    "width": 3840,
+    "height": 2160,
     "thumb": "/walls/thumbs/60.svg",
-    "full": "/walls/full/global-echo-1920x1080-60.svg",
+    "full": "/walls/full/global-echo-3840x2160-60.svg",
+    "resolutions": [
+      {
+        "label": "1080p",
+        "width": 1920,
+        "height": 1080,
+        "url": "/walls/full/global-echo-1920x1080-60.svg"
+      },
+      {
+        "label": "4K",
+        "width": 3840,
+        "height": 2160,
+        "url": "/walls/full/global-echo-3840x2160-60.svg"
+      },
+      {
+        "label": "8K",
+        "width": 7680,
+        "height": 4320,
+        "url": "/walls/full/global-echo-7680x4320-60.svg"
+      }
+    ],
     "dominant": "#facc15"
   }
 ]

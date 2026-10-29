@@ -57,17 +57,25 @@ export default function Header() {
           </button>
         </form>
 
-        <div className="relative">
-          <button
-            type="button"
-            onClick={() => setOpen((value) => !value)}
-            aria-expanded={open}
-            aria-controls="category-menu"
+        <div className="flex items-center gap-2">
+          <Link
+            href="/random"
             className="rounded-button border border-border bg-surface px-4 py-2 text-sm font-medium text-text hover:bg-surface-2"
           >
-            Categories
-          </button>
-          <CategoryMenu open={open} onClose={() => setOpen(false)} />
+            Random
+          </Link>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setOpen((value) => !value)}
+              aria-expanded={open}
+              aria-controls="category-menu"
+              className="rounded-button border border-border bg-surface px-4 py-2 text-sm font-medium text-text hover:bg-surface-2"
+            >
+              Categories
+            </button>
+            <CategoryMenu open={open} onClose={() => setOpen(false)} />
+          </div>
         </div>
       </div>
     </header>

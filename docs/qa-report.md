@@ -9,7 +9,7 @@ npm run build
 npm run test:e2e
 ```
 
-Resultado: **10/10 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Los casos 1–8 son el MVP; 9–10 cubren la ampliación post-cierre (A1/A2).
+Resultado: **13/13 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Los casos 1–8 son el MVP; 9–13 cubren la ampliación post-cierre (A1/A2 y B4–B6).
 
 | # | Caso | Verifica |
 |---|---|---|
@@ -23,6 +23,9 @@ Resultado: **10/10 en verde** (`tests/e2e/smoke.spec.ts`, Chromium headless). Lo
 | 8 | Responsive | sin scroll horizontal a 390 px (`scrollWidth - clientWidth ≤ 1`) |
 | 9 | Footer | las 5 rutas informativas responden y muestran su H1 |
 | 10 | SEO/404 | 404 propio, `sitemap.xml` con categorías/detalles, `robots.txt` y meta OG/Twitter |
+| 11 | Resoluciones | el selector cambia `href`/`download` entre 1080p, 4K y 8K; el SVG 8K responde 200 |
+| 12 | Breadcrumbs/tags | migas con `aria-current` y tag que navega a `/search?q=gradient` con resultados |
+| 13 | Random UI | el enlace `Random` del header termina en un detalle válido |
 
 ## 2. Lighthouse (desktop, headless Chrome)
 
@@ -50,7 +53,7 @@ npx lighthouse http://localhost:3000/cool-wallpapers --preset=desktop `
 
 ## 4. Límites conocidos
 
-- El catálogo es de 60 placeholders SVG (30 categorías); no hay imágenes reales ni CDN.
+- El catálogo es de 60 placeholders SVG (30 categorías) con 3 variantes nominales cada uno (1080p/4K/8K); no hay imágenes raster ni CDN.
 - `/random` no es determinista por diseño (307 en cada visita).
 - `next lint` está deprecado en Next 15 (aviso del propio CLI); no afecta al build.
 - La paridad de tokens con el sitio original es aproximada: Cloudflare bloquea la lectura del CSS público (ADR-5).

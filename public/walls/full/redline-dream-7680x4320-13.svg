@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7680" height="4320" viewBox="0 0 7680 4320">
+  <defs>
+    <linearGradient id="grad13" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dc2626" />
+      <stop offset="1" stop-color="#450a0a" />
+    </linearGradient>
+  </defs>
+  <rect width="7680" height="4320" fill="url(#grad13)" />
+  <circle cx="5069" cy="2549" r="1536" fill="#ffffff" opacity="0.10" />
+  <circle cx="1766" cy="3067" r="2381" fill="#000000" opacity="0.12" />
+</svg>

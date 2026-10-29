@@ -17,6 +17,7 @@ Replicar el comportamiento de `https://4kwallpapers.com/cool-wallpapers`: navega
 | 8 | A1: páginas del footer (privacidad, términos, copyright, contacto, upload) | done |
 | 9 | A2: 404 propio, sitemap, robots, Open Graph/Twitter e icono | done |
 | 10 | C7: CI en GitHub Actions (build + tipos + lint + E2E) | done |
+| 11 | B4: selector 1080p/4K/8K · B5: breadcrumbs y tags · B6: Random en header | done |
 
 ## Rutas
 | Ruta | Contenido |
@@ -24,7 +25,7 @@ Replicar el comportamiento de `https://4kwallpapers.com/cool-wallpapers`: navega
 | `/` | redirect a `/cool-wallpapers` |
 | `/cool-wallpapers` | H1 + intro + grid + paginación + colecciones |
 | `/{categoria}` | igual, filtrado por categoría |
-| `/{categoria}/{slug}-{id}.html` | detalle + resoluciones + descarga |
+| `/{categoria}/{slug}-{id}.html` | detalle + selector 1080p/4K/8K + descarga |
 | `/search?q=` | resultados |
 | `/random` | redirect a un item aleatorio |
 | `/privacy`, `/terms`, `/copyright`, `/contact`, `/upload` | páginas informativas del footer |

@@ -1,5 +1,12 @@
 import rawWallpapers from "@/data/wallpapers.json";
 
+export type WallpaperResolution = {
+  label: string;
+  width: number;
+  height: number;
+  url: string;
+};
+
 export type Wallpaper = {
   id: number;
   slug: string;
@@ -10,6 +17,7 @@ export type Wallpaper = {
   height: number;
   thumb: string;
   full: string;
+  resolutions: WallpaperResolution[];
   dominant: string;
 };
 

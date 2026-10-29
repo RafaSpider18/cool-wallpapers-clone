@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CategoryBrowser } from "@/components/CategoryBrowser";
 import { getByCategory } from "@/lib/wallpapers";
 
@@ -29,6 +30,12 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
 
   return (
     <main className="mx-auto w-full max-w-container px-4 py-10">
+      <Breadcrumbs
+        items={[
+          { label: "Inicio", href: "/cool-wallpapers" },
+          { label: title },
+        ]}
+      />
       <header className="mb-8">
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="mt-2 text-muted">Wallpapers de la categoría {title}.</p>
