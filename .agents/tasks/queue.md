@@ -19,6 +19,7 @@ Dueño: `W1` · `W2` · `creador`
 | T-012 | QA: Playwright + Lighthouse | T-010, T-011 | done | supervisor | `npm run test:e2e` |
 | T-013 | Arte raster propio (thumbs + full 1080p/4K JPEG) | T-003, T-012 | done | supervisor | `npm run gen:assets` + `npm run test:e2e` |
 | T-014 | SEO: meta en `<head>` de rutas dinámicas (SSG listado/categorías) | T-007 | done | supervisor | `npm run test:e2e` + Lighthouse SEO 100 |
+| T-015 | Preparar publicación (README, .env.example, checklist) | T-014 | done | supervisor | `npm run build` |
 
 ## Bitácora
 | Fecha | ID | Evento |
@@ -31,3 +32,4 @@ Dueño: `W1` · `W2` · `creador`
 | 2026-10-28 | T-013 | done — arte raster JPEG determinista (180 archivos, ~9 MB, 7 escenas); E2E 13/13; Lighthouse perf 100/CLS 0 |
 | 2026-10-28 | — | T-014 registrada (pendiente): meta description del `<head>` en rutas dinámicas |
 | 2026-10-28 | T-014 | done — /cool-wallpapers estático y categorías SSG; Lighthouse 100×4 en listado/categoría/detalle, CLS 0 |
+| 2026-10-28 | T-015 | done — README + .env.example + checklist de despliegue en README |
